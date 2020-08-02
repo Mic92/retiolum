@@ -1,5 +1,7 @@
 {
   description = "Nix flake for retiolum VPN";
 
-  outputs = { self }: {};
+  outputs = { self }: {
+    nixosModules.retiolum = import ./modules/retiolum;
+  };
 }
