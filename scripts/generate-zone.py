@@ -12,7 +12,7 @@ def zone_header(domain: str) -> str:
     return f"""@ 3600 IN SOA {domain}. root.r. {serial} 7200 3600 86400 3600
 @ 3600 IN NS ns1
 ns1 IN A 10.243.29.174
-ns2 IN A 42:0:3c46:70c7:8526:2adf:7451:8bbb
+ns2 IN AAAA 42:0:3c46:70c7:8526:2adf:7451:8bbb
 """
 
 
