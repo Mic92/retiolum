@@ -1,0 +1,11 @@
+@ 3600 IN SOA r. root.r. 20204812Aug 7200 3600 86400 3600
+@ 3600 IN NS ns1
+ns1 IN A 10.243.29.174
+ns2 IN A 42:0:3c46:70c7:8526:2adf:7451:8bbb
+nomic IN A 10.23.1.110
+ok IN A 10.23.1.1
+wu IN A 10.23.1.37
+cache.wu IN A 10.23.1.37
+xu IN A 10.23.1.38
+cache.xu IN A 10.23.1.38
+zu IN A 10.23.1.39
