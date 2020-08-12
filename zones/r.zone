@@ -1,4 +1,4 @@
-@ 3600 IN SOA r. root.r. 2020371218 7200 3600 86400 3600
+@ 3600 IN SOA r. root.r. 2020311221 7200 3600 86400 3600
 @ 3600 IN NS ns1
 ns1 IN A 10.243.29.174
 ns2 IN AAAA 42:0:3c46:70c7:8526:2adf:7451:8bbb
@@ -40,6 +40,8 @@ enklave IN A 10.243.27.30
 enklave IN AAAA 42:0:8809:2ef1:f4d5:6338:daa4:ba68
 cgit.enklave IN A 10.243.27.30
 cgit.enklave IN AAAA 42:0:8809:2ef1:f4d5:6338:daa4:ba68
+eva IN A 10.243.29.185
+eva IN AAAA 42:0:3c46:8a42:2b1:5ef8:7562:676a
 eve IN A 10.243.29.174
 eve IN AAAA 42:0:3c46:70c7:8526:2adf:7451:8bbb
 filebitch IN A 10.243.189.130
@@ -120,6 +122,10 @@ cgit.hotdog IN A 10.243.77.3
 cgit.hotdog IN AAAA 42:0:ca48:b3a6:3560:2208:e86a:c7d6
 irc IN A 10.243.77.3
 irc IN AAAA 42:0:ca48:b3a6:3560:2208:e86a:c7d6
+wiki IN A 10.243.77.3
+wiki IN AAAA 42:0:ca48:b3a6:3560:2208:e86a:c7d6
+wiki.hotdog IN A 10.243.77.3
+wiki.hotdog IN AAAA 42:0:ca48:b3a6:3560:2208:e86a:c7d6
 icarus IN A 10.243.133.114
 icarus IN AAAA 42:0:ce16::1205
 cgit.icarus IN A 10.243.133.114

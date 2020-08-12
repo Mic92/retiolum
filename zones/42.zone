@@ -1,4 +1,4 @@
-@ 3600 IN SOA 2.4.ip6.arpa. root.r. 2020371218 7200 3600 86400 3600
+@ 3600 IN SOA 2.4.ip6.arpa. root.r. 2020311221 7200 3600 86400 3600
 @ 3600 IN NS ns1
 ns1 IN A 10.243.29.174
 ns2 IN AAAA 42:0:3c46:70c7:8526:2adf:7451:8bbb
@@ -19,6 +19,7 @@ ns2 IN AAAA 42:0:3c46:70c7:8526:2adf:7451:8bbb
 42:0:3c46:7296:36f3:4099:1a6b:d47e. IN PTR dpdkm.r.
 42:0:3c46:126:3b9d:8298:f1b5:86d. IN PTR eddie.r.
 42:0:8809:2ef1:f4d5:6338:daa4:ba68. IN PTR enklave.r.
+42:0:3c46:8a42:2b1:5ef8:7562:676a. IN PTR eva.r.
 42:0:3c46:70c7:8526:2adf:7451:8bbb. IN PTR eve.r.
 42:0:ca48:344c:cb3f:4a05:711b:f53e. IN PTR filebitch.r.
 42:0:e644:8862:affa:791e:7baa:d505. IN PTR fileleech.r.
