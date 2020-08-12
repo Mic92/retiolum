@@ -5,9 +5,11 @@ import datetime
 from collections import defaultdict
 from typing import DefaultDict, Any
 
-serial = datetime.datetime.now().strftime("%Y%M%d%h")
+serial = datetime.datetime.now().strftime("%Y%M%d%H")
 
-HEADER = f"""@ 3600 IN SOA r. root.r. {serial} 7200 3600 86400 3600
+
+def zone_header(domain: str) -> str:
+    return f"""@ 3600 IN SOA {domain}. root.r. {serial} 7200 3600 86400 3600
 @ 3600 IN NS ns1
 ns1 IN A 10.243.29.174
 ns2 IN A 42:0:3c46:70c7:8526:2adf:7451:8bbb
@@ -30,19 +32,19 @@ def main() -> None:
 
     for zone, hosts in dns.items():
         with open(f"{zone}.zone", "w") as f:
-            f.write(HEADER)
+            f.write(zone_header(zone))
             for name, record in hosts.items():
                 for rtype, ip in record.items():
                     f.write(f"{name} IN {rtype} {ip}\n")
 
     with open("240.10.zone", "w") as f:
-        f.write(HEADER)
+        f.write(zone_header("240.10.in-addr.arpa"))
         for ip, name in rdns.items():
             if "." in ip and ip.startswith("10.2"):
                 f.write(f"{ip}. IN PTR {name}.\n")
 
     with open("42.zone", "w") as f:
-        f.write(HEADER)
+        f.write(zone_header("2.4.ip6.arpa"))
         for ip, name in rdns.items():
             if ":" in ip and ip.startswith("42:"):
                 f.write(f"{ip}. IN PTR {name}.\n")
