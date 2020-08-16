@@ -60,9 +60,11 @@ in {
       [Match]
       Name = tinc.${netname}
 
-      [Network]
+      [Link]
       # tested with `ping -6 turingmachine.r -s 1378`, not sure how low it must be
-      MTU=1377
+      MTUBytes=1377
+
+      [Network]
       Address=${cfg.ipv4}/12
       Address=${cfg.ipv6}/16
     '';
