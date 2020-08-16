@@ -61,6 +61,8 @@ in {
       Name = tinc.${netname}
 
       [Network]
+      # tested with `ping -6 turingmachine.r -s 1378`, not sure how low it must be
+      MTU=1377
       Address=${cfg.ipv4}/12
       Address=${cfg.ipv6}/16
     '';
