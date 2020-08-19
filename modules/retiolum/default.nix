@@ -50,6 +50,8 @@ in {
     systemd.services."tinc.${netname}".preStart = ''
       rm -rf /etc/tinc/${netname}/hosts
       cp -R ${../../hosts} /etc/tinc/${netname}/hosts
+      chown -R tinc.${netname} /etc/tinc/${netname}/hosts
+      chmod -R u+w /etc/tinc/${netname}/hosts
     '';
 
     networking.firewall.allowedTCPPorts = [ 655 ];
