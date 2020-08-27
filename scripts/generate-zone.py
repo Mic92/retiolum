@@ -23,7 +23,8 @@ def main() -> None:
     with open(hostsfile) as f:
         for line in f:
             columns = line.split(" ")
-            rdns[columns[0]] = columns[1].strip()
+            if not columns[1].startswith("4.") and not columns[1].startswith("6."):
+                rdns[columns[0]] = columns[1].strip()
             for name in columns[1:]:
                 hostname, tld = name.strip().rsplit(".", 1)
                 ip = columns[0]

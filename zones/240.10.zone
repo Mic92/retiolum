@@ -1,12 +1,7 @@
-@ 3600 IN SOA 240.10.in-addr.arpa. root.r. 2020311221 7200 3600 86400 3600
+@ 3600 IN SOA 240.10.in-addr.arpa. root.r. 2020362721 7200 3600 86400 3600
 @ 3600 IN NS ns1
 ns1 IN A 10.243.29.174
 ns2 IN AAAA 42:0:3c46:70c7:8526:2adf:7451:8bbb
-10.23.1.110. IN PTR nomic.gg23.
-10.23.1.1. IN PTR ok.gg23.
-10.23.1.37. IN PTR wu.gg23.
-10.23.1.38. IN PTR xu.gg23.
-10.23.1.39. IN PTR zu.gg23.
 10.243.21.1. IN PTR alnus.r.
 10.243.29.181. IN PTR amy.r.
 10.243.0.77. IN PTR blue.r.
