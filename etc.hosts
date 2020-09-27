@@ -418,8 +418,12 @@
 42:1:a46e:c68b:4db0:3a27:7cfb:9ef4 6.ni.w
 42:1:a46e:7b8c:531e:67a5:9846:756e nomic.w
 42:1:a46e:7b8c:531e:67a5:9846:756e 6.nomic.w
+10.244.1.13 phone.w
+10.244.1.13 4.phone.w
 42:1:ce16::a phone.w
 42:1:ce16::a 6.phone.w
+10.244.1.103 prism.w
+10.244.1.103 4.prism.w
 42:1:ce16::1 prism.w
 42:1:ce16::1 6.prism.w
 42:1:a46e:983d:1d32:dc73:9f63:363c querel.w
@@ -434,6 +438,8 @@
 10.244.245.2 4.shackdev.w
 42:1:e644:e626:6023:4892:d72a:8e19 shackdev.w
 42:1:e644:e626:6023:4892:d72a:8e19 6.shackdev.w
+10.244.1.4 shodan.w
+10.244.1.4 4.shodan.w
 42:1:ce16::50da shodan.w
 42:1:ce16::50da 6.shodan.w
 42:1:ce16::5ce7 skynet.w
