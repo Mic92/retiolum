@@ -5,7 +5,6 @@ with lib;
 let
   netname = "retiolum";
   cfg = config.networking.retiolum;
-
 in {
   options = {
     networking.retiolum.ipv4 = mkOption {
@@ -45,14 +44,24 @@ in {
 
     networking.extraHosts = builtins.readFile ../../etc.hosts;
 
-    environment.systemPackages = [ config.services.tinc.networks.${netname}.package ];
+    environment.systemPackages = [
+      config.services.tinc.networks.${netname}.package
+    ];
 
-    systemd.services."tinc.${netname}".preStart = ''
-      rm -rf /etc/tinc/${netname}/hosts
-      cp -R ${../../hosts} /etc/tinc/${netname}/hosts
-      chown -R tinc.${netname} /etc/tinc/${netname}/hosts
-      chmod -R u+w /etc/tinc/${netname}/hosts
-    '';
+    systemd.services."tinc.${netname}-host-keys" = {
+      description = "Install tinc.${netname} host keys";
+      requiredBy = [ "tinc.${netname}" ];
+      before = [ "tinc.${netname}" ];
+      script = ''
+        rm -rf /etc/tinc/${netname}/hosts
+        cp -R ${../../hosts} /etc/tinc/${netname}/hosts
+        chown -R tinc.${netname} /etc/tinc/${netname}/hosts
+        chmod -R u+w /etc/tinc/${netname}/hosts
+      '';
+    };
+
+    # Some hosts require VPN for nixos-rebuild, so we don't want to restart it on update
+    systemd.services."tinc.${netname}".restartIfChanged = false;
 
     networking.firewall.allowedTCPPorts = [ 655 ];
     networking.firewall.allowedUDPPorts = [ 655 ];
