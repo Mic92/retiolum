@@ -58,6 +58,10 @@ in {
         chown -R tinc.${netname} /etc/tinc/${netname}/hosts
         chmod -R u+w /etc/tinc/${netname}/hosts
       '';
+      serviceConfig = {
+        Type = "oneshot";
+        RemainAfterExit = true;
+      };
     };
 
     # Some hosts require VPN for nixos-rebuild, so we don't want to restart it on update
