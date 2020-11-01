@@ -50,8 +50,8 @@ in {
 
     systemd.services."tinc.${netname}-host-keys" = {
       description = "Install tinc.${netname} host keys";
-      requiredBy = [ "tinc.${netname}" ];
-      before = [ "tinc.${netname}" ];
+      requiredBy = [ "tinc.${netname}.service" ];
+      before = [ "tinc.${netname}.service" ];
       script = ''
         rm -rf /etc/tinc/${netname}/hosts
         cp -R ${../../hosts} /etc/tinc/${netname}/hosts
