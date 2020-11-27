@@ -38,6 +38,7 @@ in {
         ConnectTo = ni
         ConnectTo = prism
         ConnectTo = eve
+        ConnectTo = eva
         AutoConnect = yes
       '';
     };
