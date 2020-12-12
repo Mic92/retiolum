@@ -65,8 +65,12 @@ in {
       };
     };
 
-    # Some hosts require VPN for nixos-rebuild, so we don't want to restart it on update
-    systemd.services."tinc.${netname}".restartIfChanged = false;
+    systemd.services."tinc.${netname}" = {
+      # Some hosts require VPN for nixos-rebuild, so we don't want to restart it on update
+      reloadIfChanged = true;
+      # also in https://github.com/NixOS/nixpkgs/pull/106715
+      serviceConfig.ExecReload = "${config.services.tinc.networks.${netname}.package}/bin/tinc -n ${netname} reload";
+    };
 
     networking.firewall.allowedTCPPorts = [ 655 ];
     networking.firewall.allowedUDPPorts = [ 655 ];
