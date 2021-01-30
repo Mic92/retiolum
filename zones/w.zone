@@ -1,4 +1,4 @@
-@ 3600 IN SOA w. root.r. 2020301706 7200 3600 86400 3600
+@ 3600 IN SOA w. root.r. 2021533022 7200 3600 86400 3600
 @ 3600 IN NS ns1
 ns1 IN A 10.243.29.174
 ns2 IN AAAA 42:0:3c46:70c7:8526:2adf:7451:8bbb
@@ -34,9 +34,13 @@ ni IN AAAA 42:1:a46e:c68b:4db0:3a27:7cfb:9ef4
 6.ni IN AAAA 42:1:a46e:c68b:4db0:3a27:7cfb:9ef4
 nomic IN AAAA 42:1:a46e:7b8c:531e:67a5:9846:756e
 6.nomic IN AAAA 42:1:a46e:7b8c:531e:67a5:9846:756e
+phone IN A 10.244.1.13
 phone IN AAAA 42:1:ce16::a
+4.phone IN A 10.244.1.13
 6.phone IN AAAA 42:1:ce16::a
+prism IN A 10.244.1.103
 prism IN AAAA 42:1:ce16::1
+4.prism IN A 10.244.1.103
 6.prism IN AAAA 42:1:ce16::1
 querel IN AAAA 42:1:a46e:983d:1d32:dc73:9f63:363c
 6.querel IN AAAA 42:1:a46e:983d:1d32:dc73:9f63:363c
@@ -50,10 +54,14 @@ shackdev IN A 10.244.245.2
 shackdev IN AAAA 42:1:e644:e626:6023:4892:d72a:8e19
 4.shackdev IN A 10.244.245.2
 6.shackdev IN AAAA 42:1:e644:e626:6023:4892:d72a:8e19
+shodan IN A 10.244.1.4
 shodan IN AAAA 42:1:ce16::50da
+4.shodan IN A 10.244.1.4
 6.shodan IN AAAA 42:1:ce16::50da
 skynet IN AAAA 42:1:ce16::5ce7
 6.skynet IN AAAA 42:1:ce16::5ce7
+styx IN AAAA 42:1:ce16::111
+6.styx IN AAAA 42:1:ce16::111
 wu IN AAAA 42:1:a46e:b17d:cf4e:39ae:462a:f95
 6.wu IN AAAA 42:1:a46e:b17d:cf4e:39ae:462a:f95
 x IN AAAA 42:1:e644:162:2d71:1642:b726:b044
