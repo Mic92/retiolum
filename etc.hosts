@@ -302,6 +302,10 @@
 10.243.0.13 4.red.r
 42:0:ce16::12ed red.r
 42:0:ce16::12ed 6.red.r
+10.243.29.188 redha.r
+10.243.29.188 4.redha.r
+42:0:3c46:2731:f350:856a:4cad:63c3 redha.r
+42:0:3c46:2731:f350:856a:4cad:63c3 6.redha.r
 10.243.29.171 rock.r loki.r
 10.243.29.171 4.rock.r 4.loki.r
 42:0:3c46:e1a5:350a:770c:ec9:f353 rock.r loki.r
