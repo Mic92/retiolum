@@ -14,7 +14,7 @@
     $ sudo systemctl enable --now tinc@retiolum
 ```
 
-3. Provide the key generated in the previous step along with **{your_name}** to Joerg.
+3. Provide the key generated in the previous step along with **{your_name}** to @Mic92 .
    You will get your respective IP addresses in return.
 
 4. Create the tinc-up executable in the **/etc/tinc/retiolum** folder
