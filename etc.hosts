@@ -40,6 +40,8 @@
 129.215.165.52 4.rose.i
 2001:630:3c1:164:6d4:c4ff:fe04:4e4b rose.i
 2001:630:3c1:164:6d4:c4ff:fe04:4e4b 6.rose.i
+129.215.165.75 sauron.i
+129.215.165.75 4.sauron.i
 10.243.21.1 alnus.r
 10.243.21.1 4.alnus.r
 42:0:a46e:99a9:9166:ae88:208:9645 alnus.r
@@ -340,6 +342,10 @@
 10.243.122.122 4.rtjure.r
 42:0:3c46:e3ce:cacc:bd95:dc9f:bc85 rtjure.r
 42:0:3c46:e3ce:cacc:bd95:dc9f:bc85 6.rtjure.r
+10.243.29.194 rose.r
+10.243.29.194 4.rose.r
+42:0:3c46:7f53:34b:ca31:16c2:da58 rose.r
+42:0:3c46:7f53:34b:ca31:16c2:da58 6.rose.r
 10.243.23.2 schasch.r
 10.243.23.2 4.schasch.r
 42:0:3c46:85c6:fbe9:bcac:ad31:b4b3 schasch.r
