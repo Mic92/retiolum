@@ -126,6 +126,10 @@
 10.243.29.180 4.donna.r
 42:0:3c46:7f2f:ed62:c6fd:9f1b:9900 donna.r
 42:0:3c46:7f2f:ed62:c6fd:9f1b:9900 6.donna.r
+10.243.0.3 echelon.r
+10.243.0.3 4.echelon.r
+42:0:ce16::4 echelon.r
+42:0:ce16::4 6.echelon.r
 10.243.29.170 eddie.r
 10.243.29.170 4.eddie.r
 42:0:3c46:126:3b9d:8298:f1b5:86d eddie.r
@@ -480,6 +484,8 @@
 42:1:ce16::17 6.coaxmetal.w
 42:1:ce16::daed daedalus.w
 42:1:ce16::daed 6.daedalus.w
+42:1:ce16::3 echelon.w
+42:1:ce16::3 6.echelon.w
 42:1:ce16::12ee green.w
 42:1:ce16::12ee 6.green.w
 10.244.245.1 gum.w
