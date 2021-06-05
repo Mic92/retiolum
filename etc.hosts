@@ -36,10 +36,10 @@
 129.215.165.53 4.martha.i
 2001:630:3c1:164:6d4:c4ff:fe04:4aba martha.i
 2001:630:3c1:164:6d4:c4ff:fe04:4aba 6.martha.i
-131.159.38.202 nardole.i
-131.159.38.202 4.nardole.i
-2a09:80c0:38::202 nardole.i
-2a09:80c0:38::202 6.nardole.i
+131.159.102.2 nardole.i
+131.159.102.2 4.nardole.i
+2a09:80c0:102::2 nardole.i
+2a09:80c0:102::2 6.nardole.i
 188.68.36.196 ni.i cgit.ni.i
 188.68.36.196 4.ni.i 4.cgit.ni.i
 95.216.1.150 prism.i paste.i
