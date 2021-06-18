@@ -32,6 +32,7 @@ in {
     services.tinc.networks.${netname} = {
       name = cfg.nodename;
       extraConfig = ''
+        Compression = 11  # best lzo
         LocalDiscovery = yes
 
         ConnectTo = gum
