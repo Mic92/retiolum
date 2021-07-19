@@ -5,7 +5,7 @@
 2. [SSH Setup](#SSH-Setup)
 
 ## VPN Setup
-1. Install **tinc** (e.g. Ubuntu : sudo apt install tinc)
+1. Install **tinc** (e.g. Ubuntu : `sudo apt install tinc`, MacOS: `brew install tinc --devel`)
 
 2. Create the appropriate directory and perform the initial tinc startup 
 ```
@@ -14,7 +14,7 @@
     $ sudo systemctl enable --now tinc@retiolum
 ```
 
-3. Provide the key generated in the previous step along with **{your_name}** to @Mic92 .
+3. Provide the key generated in the previous step along with **{your_name}** (unique name for the machine) to @Mic92.
    You will get your respective IP addresses in return.
 
 4. Create the tinc-up executable in the **/etc/tinc/retiolum** folder
