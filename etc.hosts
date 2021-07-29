@@ -326,10 +326,6 @@
 10.243.0.101 4.onebutton.r
 42:0:ca48:bfa7:deac:9452:799:37a onebutton.r
 42:0:ca48:bfa7:deac:9452:799:37a 6.onebutton.r
-10.243.29.197 paulheidekrueger.r
-10.243.29.197 4.paulheidekrueger.r
-42:0:3c46:3961:b300:e2b3:f96f:2860 paulheidekrueger.r
-42:0:3c46:3961:b300:e2b3:f96f:2860 6.paulheidekrueger.r
 10.243.23.1 pepe.r
 10.243.23.1 4.pepe.r
 42:0:3c46:b7c1:7c9e:7c14:94b2:684a pepe.r
@@ -486,6 +482,10 @@
 10.243.13.38 4.xu.r 4.cgit.xu.r 4.krebs.xu.r
 42:0:a46e:c3c:9c2f:1386:90fc:a489 xu.r cgit.xu.r krebs.xu.r
 42:0:a46e:c3c:9c2f:1386:90fc:a489 6.xu.r 6.cgit.xu.r 6.krebs.xu.r
+10.243.29.197 yasmin.r
+10.243.29.197 4.yasmin.r
+42:0:3c46:9b18:d5e7:d945:ccf8:829e yasmin.r
+42:0:3c46:9b18:d5e7:d945:ccf8:829e 6.yasmin.r
 10.243.0.14 yellow.r
 10.243.0.14 4.yellow.r
 42:0:ce16::3110 yellow.r
