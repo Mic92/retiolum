@@ -72,6 +72,9 @@ in {
       serviceConfig.ExecReload = "${config.services.tinc.networks.${netname}.package}/bin/tinc -n ${netname} reload";
     };
 
+    # this triggers tinc restarts and it is pointless to restart tinc after the key has been created
+    systemd.services."tinc.${netname}-host-keys".restartIfChanged = true;
+
     networking.firewall.allowedTCPPorts = [ 655 ];
     networking.firewall.allowedUDPPorts = [ 655 ];
 
