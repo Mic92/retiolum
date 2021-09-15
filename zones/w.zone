@@ -1,4 +1,4 @@
-@ 3600 IN SOA w. root.r. 2021533022 7200 3600 86400 3600
+@ 3600 IN SOA w. root.r. 2021321509 7200 3600 86400 3600
 @ 3600 IN NS ns1
 ns1 IN A 10.243.29.174
 ns2 IN AAAA 42:0:3c46:70c7:8526:2adf:7451:8bbb
@@ -8,8 +8,16 @@ alnus IN AAAA 42:1:a46e:99a9:9166:ae88:208:9645
 6.alnus IN AAAA 42:1:a46e:99a9:9166:ae88:208:9645
 blue IN AAAA 42:1:ce16::b1ce
 6.blue IN AAAA 42:1:ce16::b1ce
+coaxmetal IN AAAA 42:1:ce16::17
+6.coaxmetal IN AAAA 42:1:ce16::17
 daedalus IN AAAA 42:1:ce16::daed
 6.daedalus IN AAAA 42:1:ce16::daed
+domsen-pixel IN A 10.244.1.17
+domsen-pixel IN AAAA 42:1:ce16::d0
+4.domsen-pixel IN A 10.244.1.17
+6.domsen-pixel IN AAAA 42:1:ce16::d0
+echelon IN AAAA 42:1:ce16::3
+6.echelon IN AAAA 42:1:ce16::3
 green IN AAAA 42:1:ce16::12ee
 6.green IN AAAA 42:1:ce16::12ee
 gum IN A 10.244.245.1
@@ -20,6 +28,8 @@ hilum IN AAAA 42:1:ce16::5b
 6.hilum IN AAAA 42:1:ce16::5b
 icarus IN AAAA 42:1:ce16::1205
 6.icarus IN AAAA 42:1:ce16::1205
+lasspi IN AAAA 42:1:ce16::189
+6.lasspi IN AAAA 42:1:ce16::189
 littleT IN AAAA 42:1:ce16::771e
 6.littleT IN AAAA 42:1:ce16::771e
 miaoski IN AAAA 42:1:3c46:a85c:9517:3474:8e1c:4be7
