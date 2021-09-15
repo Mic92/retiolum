@@ -59,6 +59,8 @@ in {
         chown -R tinc.${netname} /etc/tinc/${netname}/hosts
         chmod -R u+w /etc/tinc/${netname}/hosts
       '';
+      # this triggers tinc restarts and it is pointless to restart tinc after the key has been created
+      restartIfChanged = false;
       serviceConfig = {
         Type = "oneshot";
         RemainAfterExit = true;
@@ -71,9 +73,6 @@ in {
       # also in https://github.com/NixOS/nixpkgs/pull/106715
       serviceConfig.ExecReload = "${config.services.tinc.networks.${netname}.package}/bin/tinc -n ${netname} reload";
     };
-
-    # this triggers tinc restarts and it is pointless to restart tinc after the key has been created
-    systemd.services."tinc.${netname}-host-keys".restartIfChanged = true;
 
     networking.firewall.allowedTCPPorts = [ 655 ];
     networking.firewall.allowedUDPPorts = [ 655 ];
