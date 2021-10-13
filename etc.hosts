@@ -174,6 +174,10 @@
 10.243.211.172 4.flap.r
 42:0:e644:43dc:2291:7db8:acdc:d33e flap.r
 42:0:e644:43dc:2291:7db8:acdc:d33e 6.flap.r
+10.243.29.196 graham.r
+10.243.29.196 4.graham.r
+42:0:3c46:ab64:fa7c:171a:c94a:ac19 graham.r
+42:0:3c46:ab64:fa7c:171a:c94a:ac19 6.graham.r
 10.243.29.187 grandalf.r
 10.243.29.187 4.grandalf.r
 42:0:3c46:f1e0:58b7:26a4:6328:d5c2 grandalf.r
@@ -378,6 +382,10 @@
 10.243.122.122 4.rtjure.r
 42:0:3c46:e3ce:cacc:bd95:dc9f:bc85 rtjure.r
 42:0:3c46:e3ce:cacc:bd95:dc9f:bc85 6.rtjure.r
+10.243.29.198 ryan.r
+10.243.29.198 4.ryan.r
+42:0:3c46:53a7:e0e3:a2b6:471d:44a ryan.r
+42:0:3c46:53a7:e0e3:a2b6:471d:44a 6.ryan.r
 10.243.29.194 sauron.r
 10.243.29.194 4.sauron.r
 42:0:3c46:7f53:34b:ca31:16c2:da58 sauron.r
@@ -486,10 +494,10 @@
 10.243.0.14 4.yellow.r
 42:0:ce16::3110 yellow.r
 42:0:ce16::3110 6.yellow.r
-10.243.2.34 zaatar.r zaatar.kmein.r radio.kmein.r
-10.243.2.34 4.zaatar.r 4.zaatar.kmein.r 4.radio.kmein.r
-42:0:3c46:156e:10b6:3bd6:6e82:b2cd zaatar.r zaatar.kmein.r radio.kmein.r
-42:0:3c46:156e:10b6:3bd6:6e82:b2cd 6.zaatar.r 6.zaatar.kmein.r 6.radio.kmein.r
+10.243.2.34 zaatar.r zaatar.kmein.r radio.kmein.r bvg.kmein.r
+10.243.2.34 4.zaatar.r 4.zaatar.kmein.r 4.radio.kmein.r 4.bvg.kmein.r
+42:0:3c46:156e:10b6:3bd6:6e82:b2cd zaatar.r zaatar.kmein.r radio.kmein.r bvg.kmein.r
+42:0:3c46:156e:10b6:3bd6:6e82:b2cd 6.zaatar.r 6.zaatar.kmein.r 6.radio.kmein.r 6.bvg.kmein.r
 10.243.13.40 zu.r
 10.243.13.40 4.zu.r
 42:0:a46e:9c86:82ce:fa82:83d3:fda zu.r
