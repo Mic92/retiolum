@@ -278,10 +278,6 @@
 10.243.29.200 4.maurice.r
 42:0:3c46:eea1:4d78:e62d:899a:4d7b maurice.r
 42:0:3c46:eea1:4d78:e62d:899a:4d7b 6.maurice.r
-10.243.0.19 morpheus.r
-10.243.0.19 4.morpheus.r
-42:0:ce16::12f morpheus.r
-42:0:ce16::12f 6.morpheus.r
 10.243.0.2 mors.r
 10.243.0.2 4.mors.r
 42:0:ce16::dea7 mors.r
@@ -370,10 +366,6 @@
 10.243.27.32 4.reagenzglas.r
 42:0:8809:48df:e952:9e30:78ff:ebc7 reagenzglas.r
 42:0:8809:48df:e952:9e30:78ff:ebc7 6.reagenzglas.r
-10.243.0.13 red.r
-10.243.0.13 4.red.r
-42:0:ce16::12ed red.r
-42:0:ce16::12ed 6.red.r
 10.243.29.188 redha.r
 10.243.29.188 4.redha.r
 42:0:3c46:2731:f350:856a:4cad:63c3 redha.r
@@ -458,10 +450,6 @@
 10.243.42.13 4.ilmu.r
 42:0:3c46:bc8c:78fb:66b5:512c:7fbe ilmu.r
 42:0:3c46:bc8c:78fb:66b5:512c:7fbe 6.ilmu.r
-10.243.81.176 uriel.r
-10.243.81.176 4.uriel.r
-42:0:ce16::1e1 uriel.r
-42:0:ce16::1e1 6.uriel.r
 10.243.214.15 wbob.r hydra.wbob.r log.wbob.r
 10.243.214.15 4.wbob.r 4.hydra.wbob.r 4.log.wbob.r
 42:0:e644:4499:d034:895e:34c8:6f9a wbob.r hydra.wbob.r log.wbob.r
@@ -542,8 +530,6 @@
 42:1:ce16::771e 6.littleT.w
 42:1:3c46:a85c:9517:3474:8e1c:4be7 miaoski.w
 42:1:3c46:a85c:9517:3474:8e1c:4be7 6.miaoski.w
-42:1:ce16::12f morpheus.w
-42:1:ce16::12f 6.morpheus.w
 42:1:ce16::dea7 mors.w
 42:1:ce16::dea7 6.mors.w
 42:1:a46e:3cd3:1950:3ea6:785e:e124 mu.w
