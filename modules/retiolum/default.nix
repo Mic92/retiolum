@@ -31,6 +31,8 @@ in {
   config = {
     services.tinc.networks.${netname} = {
       name = cfg.nodename;
+      # allow resolving dns
+      chroot = false;
       extraConfig = ''
         LocalDiscovery = yes
 
