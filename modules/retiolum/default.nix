@@ -5,6 +5,7 @@ with lib;
 let
   netname = "retiolum";
   cfg = config.networking.retiolum;
+  hosts = ../../hosts;
 in {
   options = {
     networking.retiolum.ipv4 = mkOption {
@@ -36,11 +37,11 @@ in {
       extraConfig = ''
         LocalDiscovery = yes
 
+        ConnectTo = eva
+        ConnectTo = eve
         ConnectTo = gum
         ConnectTo = ni
         ConnectTo = prism
-        ConnectTo = eve
-        ConnectTo = eva
         AutoConnect = yes
       '';
     };
@@ -51,25 +52,29 @@ in {
       config.services.tinc.networks.${netname}.package
     ];
 
-    systemd.services."tinc.${netname}-host-keys" = {
-      description = "Install tinc.${netname} host keys";
-      requiredBy = [ "tinc.${netname}.service" ];
-      before = [ "tinc.${netname}.service" ];
-      script = ''
+    systemd.services."tinc.${netname}-host-keys" = let
+      install-keys = pkgs.writeShellScript "install-keys" ''
         rm -rf /etc/tinc/${netname}/hosts
-        cp -R ${../../hosts} /etc/tinc/${netname}/hosts
+        cp -R ${hosts} /etc/tinc/${netname}/hosts
         chown -R tinc.${netname} /etc/tinc/${netname}/hosts
         chmod -R u+w /etc/tinc/${netname}/hosts
       '';
-      # this triggers tinc restarts and it is pointless to restart tinc after the key has been created
-      restartIfChanged = false;
+    in {
+      description = "Install tinc.${netname} host keys";
+      wantedBy = [ "multi-user.target" ];
+      before = [ "tinc.${netname}.service" ];
+      # we reload here to be reloaded before tinc reloads
+      reloadIfChanged = true;
       serviceConfig = {
         Type = "oneshot";
+        ExecStart = install-keys;
+        ExecReload = install-keys;
         RemainAfterExit = true;
       };
     };
 
     systemd.services."tinc.${netname}" = {
+      restartTriggers = [ hosts ];
       # Some hosts require VPN for nixos-rebuild, so we don't want to restart it on update
       reloadIfChanged = true;
       # also in https://github.com/NixOS/nixpkgs/pull/106715
