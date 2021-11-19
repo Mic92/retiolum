@@ -41,7 +41,6 @@ in {
         ConnectTo = prism
         ConnectTo = eve
         ConnectTo = eva
-        ConnectTo = hydrogen
         AutoConnect = yes
       '';
     };
