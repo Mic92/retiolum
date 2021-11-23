@@ -10,6 +10,8 @@
 129.215.165.58 4.clara.i
 2001:630:3c1:164:b62e:99ff:fe3d:70f2 clara.i
 2001:630:3c1:164:b62e:99ff:fe3d:70f2 6.clara.i
+157.90.232.92 dishfire.i
+157.90.232.92 4.dishfire.i
 129.215.165.54 donna.i
 129.215.165.54 4.donna.i
 2001:630:3c1:164:30a2:6e7b:c58b:cafd donna.i
@@ -140,6 +142,10 @@
 10.243.29.189 4.dimitriosxps.r
 42:0:3c46:3c7f:bc35:f39a:8d7c:1ab4 dimitriosxps.r
 42:0:3c46:3c7f:bc35:f39a:8d7c:1ab4 6.dimitriosxps.r
+10.243.133.99 dishfire.r
+10.243.133.99 4.dishfire.r
+42:0:ce16::d15f:1233 dishfire.r
+42:0:ce16::d15f:1233 6.dishfire.r
 10.243.29.186 doctor.r
 10.243.29.186 4.doctor.r
 42:0:3c46:96e2:72f4:be89:d6eb:ab14 doctor.r
