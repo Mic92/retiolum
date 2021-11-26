@@ -9,7 +9,8 @@ let
 in {
   options = {
     networking.retiolum.ipv4 = mkOption {
-      type = types.str;
+      type = types.nullOr types.str;
+      default = null;
       description = ''
         own ipv4 address
       '';
@@ -84,6 +85,10 @@ in {
     networking.firewall.allowedTCPPorts = [ 655 ];
     networking.firewall.allowedUDPPorts = [ 655 ];
 
+    warnings = lib.optional (cfg.ipv6 == null) ''
+      `networking.retiolum.ipv6` is not set
+    '';
+
     systemd.network.enable = true;
     systemd.network.networks."${netname}".extraConfig = ''
       [Match]
@@ -94,8 +99,8 @@ in {
       MTUBytes=1377
 
       [Network]
-      Address=${cfg.ipv4}/12
-      Address=${cfg.ipv6}/16
+      ${optionalString (cfg.ipv4 != null) "Address=${cfg.ipv4}/12"}
+      ${optionalString (cfg.ipv6 != null) "Address=${cfg.ipv6}/12"}
     '';
   };
 }
