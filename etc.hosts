@@ -16,8 +16,6 @@
 129.215.165.54 4.donna.i
 2001:630:3c1:164:30a2:6e7b:c58b:cafd donna.i
 2001:630:3c1:164:30a2:6e7b:c58b:cafd 6.donna.i
-129.215.197.11 eddie.i
-129.215.197.11 4.eddie.i
 88.198.164.182 enklave.i
 88.198.164.182 4.enklave.i
 131.159.102.4 eva.i
@@ -158,10 +156,6 @@
 10.243.0.3 4.echelon.r
 42:0:ce16::4 echelon.r
 42:0:ce16::4 6.echelon.r
-10.243.29.170 eddie.r
-10.243.29.170 4.eddie.r
-42:0:3c46:126:3b9d:8298:f1b5:86d eddie.r
-42:0:3c46:126:3b9d:8298:f1b5:86d 6.eddie.r
 10.243.27.30 enklave.r cgit.enklave.r
 10.243.27.30 4.enklave.r 4.cgit.enklave.r
 42:0:8809:2ef1:f4d5:6338:daa4:ba68 enklave.r cgit.enklave.r
