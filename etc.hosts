@@ -48,6 +48,8 @@
 188.68.36.196 4.ni.i 4.cgit.ni.i
 95.216.1.150 prism.i paste.i
 95.216.1.150 4.prism.i 4.paste.i
+2a01:4f9:2a:1e9::1 prism.i paste.i
+2a01:4f9:2a:1e9::1 6.prism.i 6.paste.i
 129.215.165.52 rose.i
 129.215.165.52 4.rose.i
 2001:630:3c1:164:6d4:c4ff:fe04:4e4b rose.i
@@ -358,10 +360,10 @@
 10.243.29.193 4.philipsaendig.r
 42:0:3c46:1260:1093:1e2e:2ca0:9c36 philipsaendig.r
 42:0:3c46:1260:1093:1e2e:2ca0:9c36 6.philipsaendig.r
-10.243.0.103 prism.r cache.prism.r cgit.prism.r flix.r paste.r c.r p.r search.r
-10.243.0.103 4.prism.r 4.cache.prism.r 4.cgit.prism.r 4.flix.r 4.paste.r 4.c.r 4.p.r 4.search.r
-42:0:ce16::1 prism.r cache.prism.r cgit.prism.r flix.r paste.r c.r p.r search.r
-42:0:ce16::1 6.prism.r 6.cache.prism.r 6.cgit.prism.r 6.flix.r 6.paste.r 6.c.r 6.p.r 6.search.r
+10.243.0.103 prism.r cache.prism.r cgit.prism.r flix.r jelly.r paste.r c.r p.r search.r
+10.243.0.103 4.prism.r 4.cache.prism.r 4.cgit.prism.r 4.flix.r 4.jelly.r 4.paste.r 4.c.r 4.p.r 4.search.r
+42:0:ce16::1 prism.r cache.prism.r cgit.prism.r flix.r jelly.r paste.r c.r p.r search.r
+42:0:ce16::1 6.prism.r 6.cache.prism.r 6.cgit.prism.r 6.flix.r 6.jelly.r 6.paste.r 6.c.r 6.p.r 6.search.r
 10.243.77.2 puyak.r build.puyak.r cgit.puyak.r
 10.243.77.2 4.puyak.r 4.build.puyak.r 4.cgit.puyak.r
 42:0:ca48:f98f:63d7:31ce:922b:245d puyak.r build.puyak.r cgit.puyak.r
@@ -578,6 +580,10 @@
 42:1:ce16::5ce7 6.skynet.w
 42:1:ce16::111 styx.w
 42:1:ce16::111 6.styx.w
+10.244.1.14 tablet.w
+10.244.1.14 4.tablet.w
+42:1:ce16::b tablet.w
+42:1:ce16::b 6.tablet.w
 42:1:a46e:b17d:cf4e:39ae:462a:f95 wu.w
 42:1:a46e:b17d:cf4e:39ae:462a:f95 6.wu.w
 42:1:e644:162:2d71:1642:b726:b044 x.w
