@@ -12,7 +12,7 @@ If you are a flake user:
   outputs = { retiolum, ... }: {
     # Than include `retiolum.nixosModules.retiolum` nixos module in your nixos configurations
     # To add the retiolum ssl certificate include `retiolum.nixosModules.ca`
-  }
+  };
 }
 ```
 
