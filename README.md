@@ -1,8 +1,33 @@
 # **Retiolum tinc keys and hosts**
 
-## Contents
-1. [VPN Setup](#VPN-Setup)
-2. [SSH Setup](#SSH-Setup)
+## NixOS usage
+
+If you are a flake user:
+
+```nix
+{
+  inputs = {
+    retiolum.url = "git+https://git.thalheim.io/Mic92/retiolum";
+  };
+  outputs = { retiolum, ... }: {
+    # Than include `retiolum.nixosModules.retiolum` nixos module in your nixos configurations
+    # To add the retiolum ssl certificate include `retiolum.nixosModules.ca`
+  }
+}
+```
+
+First add your key to https://github.com/krebs/stockholm
+Mic92's stockholm fork will than update this repository itself.
+
+```nix
+{
+  # lookup the ipv6 address from the generated text file ./hosts
+  networking.retiolum.ipv6 = "42:0:3c46:70c7:8526:2adf:0000:0000";
+  # optional
+  # networking.retiolum.ipv4 = "10.240.0.0";
+}
+```
+
 
 ## VPN Setup
 1. Install **tinc** (e.g. Ubuntu : `sudo apt install tinc`, MacOS: `brew install tinc --devel`)
