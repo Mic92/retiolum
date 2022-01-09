@@ -6,11 +6,13 @@ in {
       type = lib.types.str;
       readOnly = true;
       default = builtins.readFile ./root-ca.crt;
+      defaultText = "root-ca.crt";
     };
     intermediateCA = lib.mkOption {
       type = lib.types.str;
       readOnly = true;
       default = builtins.readFile ./intermediate-ca.crt;
+      defaultText = "intermediate-ca.crt";
     };
     acmeURL = lib.mkOption {
       type = lib.types.str;
