@@ -286,10 +286,10 @@
 10.243.133.77 4.littleT.r
 42:0:ce16::771e littleT.r
 42:0:ce16::771e 6.littleT.r
-10.243.2.84 makanek.r makanek.kmein.r grafana.kmein.r names.kmein.r graph.r
-10.243.2.84 4.makanek.r 4.makanek.kmein.r 4.grafana.kmein.r 4.names.kmein.r 4.graph.r
-42:0:3c46:f7a9:1f0a:1b2b:822a:6050 makanek.r makanek.kmein.r grafana.kmein.r names.kmein.r graph.r
-42:0:3c46:f7a9:1f0a:1b2b:822a:6050 6.makanek.r 6.makanek.kmein.r 6.grafana.kmein.r 6.names.kmein.r 6.graph.r
+10.243.2.84 makanek.r makanek.kmein.r grafana.kmein.r names.kmein.r graph.r rrm.r
+10.243.2.84 4.makanek.r 4.makanek.kmein.r 4.grafana.kmein.r 4.names.kmein.r 4.graph.r 4.rrm.r
+42:0:3c46:f7a9:1f0a:1b2b:822a:6050 makanek.r makanek.kmein.r grafana.kmein.r names.kmein.r graph.r rrm.r
+42:0:3c46:f7a9:1f0a:1b2b:822a:6050 6.makanek.r 6.makanek.kmein.r 6.grafana.kmein.r 6.names.kmein.r 6.graph.r 6.rrm.r
 10.243.2.85 manakish.r manakish.kmein.r
 10.243.2.85 4.manakish.r 4.manakish.kmein.r
 42:0:3c46:ac99:ae36:cb8:c551:ba27 manakish.r manakish.kmein.r
@@ -366,6 +366,10 @@
 10.243.0.101 4.onebutton.r
 42:0:ca48:bfa7:deac:9452:799:37a onebutton.r
 42:0:ca48:bfa7:deac:9452:799:37a 6.onebutton.r
+10.243.10.243 papawhakaaro.r
+10.243.10.243 4.papawhakaaro.r
+42:0:3c46:488f:d2ae:e265:bd57:dcbe papawhakaaro.r
+42:0:3c46:488f:d2ae:e265:bd57:dcbe 6.papawhakaaro.r
 10.243.23.1 pepe.r
 10.243.23.1 4.pepe.r
 42:0:3c46:b7c1:7c9e:7c14:94b2:684a pepe.r
@@ -540,6 +544,8 @@
 42:1:ce16::d0 6.domsen-pixel.w
 42:1:ce16::3 echelon.w
 42:1:ce16::3 6.echelon.w
+42:1:3c46:362d:4288:1990:c391:127b phone.kmein.w
+42:1:3c46:362d:4288:1990:c391:127b 6.phone.kmein.w
 42:1:ce16::12ee green.w
 42:1:ce16::12ee 6.green.w
 10.244.245.1 gum.w
@@ -574,8 +580,6 @@
 42:1:ce16::1 6.prism.w
 42:1:a46e:983d:1d32:dc73:9f63:363c querel.w
 42:1:a46e:983d:1d32:dc73:9f63:363c 6.querel.w
-42:1:3c46:b673:31c9:233d:9cb3:7576 rilke.w
-42:1:3c46:b673:31c9:233d:9cb3:7576 6.rilke.w
 10.244.245.3 rockit.w
 10.244.245.3 4.rockit.w
 42:1:e644:319b:262c:9d61:9712:6f5f rockit.w
