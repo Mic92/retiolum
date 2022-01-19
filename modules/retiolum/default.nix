@@ -6,6 +6,7 @@ let
   netname = "retiolum";
   cfg = config.networking.retiolum;
   hosts = ../../hosts;
+  genipv6 = import ./genipv6.nix { inherit lib; };
 in {
   options = {
     networking.retiolum.ipv4 = mkOption {
@@ -17,6 +18,9 @@ in {
     };
     networking.retiolum.ipv6 = mkOption {
       type = types.str;
+      default = (genipv6 "retiolum" "external"  {
+        inherit (config.networking) hostName;
+      }).address;
       description = ''
         own ipv6 address
       '';
