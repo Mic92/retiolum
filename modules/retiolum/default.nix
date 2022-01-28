@@ -44,7 +44,6 @@ in {
 
         ConnectTo = eva
         ConnectTo = eve
-        ConnectTo = gum
         ConnectTo = ni
         ConnectTo = prism
         AutoConnect = yes
