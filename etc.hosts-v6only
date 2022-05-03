@@ -250,6 +250,8 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 42:0:3c46:488f:d2ae:e265:bd57:dcbe 6.papawhakaaro.r
 42:0:3c46:b7c1:7c9e:7c14:94b2:684a pepe.r
 42:0:3c46:b7c1:7c9e:7c14:94b2:684a 6.pepe.r
+42::443 ponte.r
+42::443 6.ponte.r
 42:0:ce16::1 prism.r cache.prism.r cgit.prism.r flix.r jelly.r paste.r c.r p.r search.r
 42:0:ce16::1 6.prism.r 6.cache.prism.r 6.cgit.prism.r 6.flix.r 6.jelly.r 6.paste.r 6.c.r 6.p.r 6.search.r
 42:0:ca48:f98f:63d7:31ce:922b:245d puyak.r build.puyak.r cgit.puyak.r
