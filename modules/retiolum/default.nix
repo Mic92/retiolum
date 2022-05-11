@@ -19,7 +19,7 @@ in {
     networking.retiolum.ipv6 = mkOption {
       type = types.str;
       default = (genipv6 "retiolum" "external"  {
-        hostName = networking.retiolum.nodename;
+        hostName = cfg.nodename;
       }).address;
       description = ''
         own ipv6 address
