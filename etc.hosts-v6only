@@ -196,6 +196,8 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 42:0:3c46:7e83:e7f9:b03:1036:3d69 6.hydrogen.r
 42:0:ce16::1205 icarus.r
 42:0:ce16::1205 6.icarus.r
+42:0:3c46:bd54:30b:b799:a9a7:68c8 iti.r
+42:0:3c46:bd54:30b:b799:a9a7:68c8 6.iti.r
 42:0:3c46:43ea:3161:1159:e7e6:ff78 jack.r
 42:0:3c46:43ea:3161:1159:e7e6:ff78 6.jack.r
 42:0:3c46:d295:dc35:5ec7:5a2d:c4a1 jackson.r
