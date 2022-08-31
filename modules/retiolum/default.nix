@@ -97,8 +97,9 @@ in {
 
     systemd.network.enable = true;
     systemd.network.networks."${netname}".extraConfig = ''
+      # zt. prefix is needed when running tailscale
       [Match]
-      Name = tinc.${netname}
+      Name = zt.${netname} tinc.${netname}
 
       [Link]
       # tested with `ping -6 turingmachine.r -s 1378`, not sure how low it must be
