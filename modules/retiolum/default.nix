@@ -106,7 +106,7 @@ in {
 
       [Network]
       ${optionalString (cfg.ipv4 != null) "Address=${cfg.ipv4}/12"}
-      ${optionalString (cfg.ipv6 != null) "Address=${cfg.ipv6}/12"}
+      ${optionalString (cfg.ipv6 != null) "Address=${cfg.ipv6}/16"}
       RequiredForOnline = no
       LinkLocalAddressing = no
     '';
