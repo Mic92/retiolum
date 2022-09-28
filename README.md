@@ -21,9 +21,8 @@ Mic92's stockholm fork will than update this repository itself.
 
 ```nix
 {
-  # lookup the ipv6 address from the generated text file ./hosts
-  networking.retiolum.ipv6 = "42:0:3c46:70c7:8526:2adf:0000:0000";
-  # optional
+  # The ipv6 address is generated based on the hostname. 
+  # optional one can specify an ipv4 address, but this is not needed.
   # networking.retiolum.ipv4 = "10.240.0.0";
 }
 ```
