@@ -214,8 +214,6 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 42:0:3c46:e6cf:86ae:85a9:e13f:4cd 6.justraute.r
 42:0:3c46:861f:a118:8e9a:82c9:3d kabsa.r kabsa.kmein.r
 42:0:3c46:861f:a118:8e9a:82c9:3d 6.kabsa.r 6.kabsa.kmein.r
-42:0:3c46:609d:b616:b4ce:18a5:5424 karakalpakstan.r
-42:0:3c46:609d:b616:b4ce:18a5:5424 6.karakalpakstan.r
 42:0:3c46:251c:ffa7:e158:c872:7f00 kelle.r
 42:0:3c46:251c:ffa7:e158:c872:7f00 6.kelle.r
 42:0:3c46:3ae6:90a8:b220:e772:8a5c kfbox.r
@@ -314,6 +312,8 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 42:0:e644:d21:6292:46e0:57e:23e5 6.senderechner.r
 42:0:ce16::50da shodan.r
 42:0:ce16::50da 6.shodan.r
+42:0:3c46:88db:5123:1258:528f:bd9e sicily.r mukke.r
+42:0:3c46:88db:5123:1258:528f:bd9e 6.sicily.r 6.mukke.r
 42:0:ce16::5ce7 skynet.r
 42:0:ce16::5ce7 6.skynet.r
 42:0:3c46:d31e:64a7:4a62:a9b0:118 sokrateslaptop.r
