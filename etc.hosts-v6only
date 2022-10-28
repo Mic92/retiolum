@@ -272,8 +272,8 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 42::443 6.ponte.r
 42:0:3c46:b51c:b34d:b7e1:3b02:8d24 porree.r
 42:0:3c46:b51c:b34d:b7e1:3b02:8d24 6.porree.r
-42:0:ce16::1 prism.r cache.prism.r cgit.prism.r flix.r jelly.r paste.r c.r p.r search.r radio-news.r
-42:0:ce16::1 6.prism.r 6.cache.prism.r 6.cgit.prism.r 6.flix.r 6.jelly.r 6.paste.r 6.c.r 6.p.r 6.search.r 6.radio-news.r
+42:0:ce16::1 prism.r cache.prism.r cgit.prism.r bota.r flix.r jelly.r paste.r c.r p.r search.r radio-news.r
+42:0:ce16::1 6.prism.r 6.cache.prism.r 6.cgit.prism.r 6.bota.r 6.flix.r 6.jelly.r 6.paste.r 6.c.r 6.p.r 6.search.r 6.radio-news.r
 42:0:ca48:f98f:63d7:31ce:922b:245d puyak.r build.puyak.r cgit.puyak.r
 42:0:ca48:f98f:63d7:31ce:922b:245d 6.puyak.r 6.build.puyak.r 6.cgit.puyak.r
 42:0:3c46:123e:bbea:3529:db39:6764 qubasa.r
