@@ -224,6 +224,8 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 42:0:3c46:ac99:ae36:cb8:c551:ba27 6.manakish.r 6.manakish.kmein.r
 42:0:3c46:5466:7dbe:f27a:673f:ea64 martha.r
 42:0:3c46:5466:7dbe:f27a:673f:ea64 6.martha.r
+42:0:ce16::113 massulus.r
+42:0:ce16::113 6.massulus.r
 42:0:3c46:6745:adf4:a844:26c4:bf91 matchbox.r
 42:0:3c46:6745:adf4:a844:26c4:bf91 6.matchbox.r
 42:0:3c46:eea1:4d78:e62d:899a:4d7b maurice.r
@@ -392,6 +394,8 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 42:1:ce16::189 6.lasspi.w
 42:1:ce16::771e littleT.w
 42:1:ce16::771e 6.littleT.w
+42:1:ce16::113 massulus.w
+42:1:ce16::113 6.massulus.w
 42:1:3c46:a85c:9517:3474:8e1c:4be7 miaoski.w
 42:1:3c46:a85c:9517:3474:8e1c:4be7 6.miaoski.w
 42:1:ce16::dea7 mors.w
