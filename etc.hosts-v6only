@@ -324,6 +324,8 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 42:0:e644:c049:da0d:aaba:4b15:6961 6.studio.r
 42:0:ce16::111 styx.r
 42:0:ce16::111 6.styx.r
+42:0:3c46:5696:7c02:a133:6b79:d6b4 tabula.r tabula.kmein.r
+42:0:3c46:5696:7c02:a133:6b79:d6b4 6.tabula.r 6.tabula.kmein.r
 42:0:3c46:2923:1c90:872:edd6:306 tahina.r tahina.kmein.r
 42:0:3c46:2923:1c90:872:edd6:306 6.tahina.r 6.tahina.kmein.r
 42:0:3c46:d517:31c3:3ef8:31e7:c0b8 toastbrot.r
