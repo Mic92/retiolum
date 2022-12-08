@@ -104,8 +104,8 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 42:0:3c46:2868:6ad:5cdf:209a:943e 6.aland.r
 42:0:a46e:99a9:9166:ae88:208:9645 alnus.r
 42:0:a46e:99a9:9166:ae88:208:9645 6.alnus.r
-42:0:ac37:4fec:2d96:374a:5389:fc24 ancha.oxzi.r
-42:0:ac37:4fec:2d96:374a:5389:fc24 6.ancha.oxzi.r
+42:0:ac37:4fec:2d96:374a:5389:fc24 ancha.oxzi.r gosh.r
+42:0:ac37:4fec:2d96:374a:5389:fc24 6.ancha.oxzi.r 6.gosh.r
 42:0:ca48:d189:eb99:d89:6d3a:354d arcadeomat.r
 42:0:ca48:d189:eb99:d89:6d3a:354d 6.arcadeomat.r
 42:0:3c46:98ac:9c80:4f25:50e3:1d8f astrid.r
@@ -224,6 +224,8 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 42:0:3c46:f7a9:1f0a:1b2b:822a:6050 6.makanek.r 6.makanek.kmein.r 6.grafana.kmein.r 6.names.kmein.r 6.graph.r 6.rrm.r 6.redaktion.r
 42:0:3c46:ac99:ae36:cb8:c551:ba27 manakish.r manakish.kmein.r
 42:0:3c46:ac99:ae36:cb8:c551:ba27 6.manakish.r 6.manakish.kmein.r
+42:0:ac37:e5d5:7e26:bdee:77ea:b44f marohu.oxzi.r
+42:0:ac37:e5d5:7e26:bdee:77ea:b44f 6.marohu.oxzi.r
 42:0:3c46:5466:7dbe:f27a:673f:ea64 martha.r
 42:0:3c46:5466:7dbe:f27a:673f:ea64 6.martha.r
 42:0:ce16::113 massulus.r
