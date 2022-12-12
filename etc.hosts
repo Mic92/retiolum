@@ -68,6 +68,8 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 188.68.36.196 4.ni.i 4.cgit.ni.i
 2a03:4000:13:4c::1 ni.i cgit.ni.i
 2a03:4000:13:4c::1 6.ni.i 6.cgit.ni.i
+141.147.36.79 ponte.i
+141.147.36.79 4.ponte.i
 95.216.1.150 prism.i paste.i
 95.216.1.150 4.prism.i 4.paste.i
 2a01:4f9:2a:1e9::1 prism.i paste.i
@@ -320,10 +322,10 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 10.243.133.77 4.littleT.r
 42:0:ce16::771e littleT.r
 42:0:ce16::771e 6.littleT.r
-10.243.2.84 makanek.r makanek.kmein.r grafana.kmein.r names.kmein.r graph.r rrm.r redaktion.r
-10.243.2.84 4.makanek.r 4.makanek.kmein.r 4.grafana.kmein.r 4.names.kmein.r 4.graph.r 4.rrm.r 4.redaktion.r
-42:0:3c46:f7a9:1f0a:1b2b:822a:6050 makanek.r makanek.kmein.r grafana.kmein.r names.kmein.r graph.r rrm.r redaktion.r
-42:0:3c46:f7a9:1f0a:1b2b:822a:6050 6.makanek.r 6.makanek.kmein.r 6.grafana.kmein.r 6.names.kmein.r 6.graph.r 6.rrm.r 6.redaktion.r
+10.243.2.84 makanek.r makanek.kmein.r grafana.kmein.r alertmanager.kmein.r prometheus.kmein.r names.kmein.r graph.r rrm.r redaktion.r
+10.243.2.84 4.makanek.r 4.makanek.kmein.r 4.grafana.kmein.r 4.alertmanager.kmein.r 4.prometheus.kmein.r 4.names.kmein.r 4.graph.r 4.rrm.r 4.redaktion.r
+42:0:3c46:f7a9:1f0a:1b2b:822a:6050 makanek.r makanek.kmein.r grafana.kmein.r alertmanager.kmein.r prometheus.kmein.r names.kmein.r graph.r rrm.r redaktion.r
+42:0:3c46:f7a9:1f0a:1b2b:822a:6050 6.makanek.r 6.makanek.kmein.r 6.grafana.kmein.r 6.alertmanager.kmein.r 6.prometheus.kmein.r 6.names.kmein.r 6.graph.r 6.rrm.r 6.redaktion.r
 10.243.2.85 manakish.r manakish.kmein.r
 10.243.2.85 4.manakish.r 4.manakish.kmein.r
 42:0:3c46:ac99:ae36:cb8:c551:ba27 manakish.r manakish.kmein.r
@@ -364,10 +366,10 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 10.243.0.5 4.news.r 4.brockman.r 4.go.r 4.rss.r
 42:0:ca48:c2c2:19fb:a0e9:95b9:794f news.r brockman.r go.r rss.r
 42:0:ca48:c2c2:19fb:a0e9:95b9:794f 6.news.r 6.brockman.r 6.go.r 6.rss.r
-10.243.113.223 ni.r cgit.ni.r search.ni.r
-10.243.113.223 4.ni.r 4.cgit.ni.r 4.search.ni.r
-42:0:a46e:c68b:4db0:3a27:7cfb:9ef4 ni.r cgit.ni.r search.ni.r
-42:0:a46e:c68b:4db0:3a27:7cfb:9ef4 6.ni.r 6.cgit.ni.r 6.search.ni.r
+10.243.113.223 ni.r cgit.ni.r krebs.ni.r search.ni.r
+10.243.113.223 4.ni.r 4.cgit.ni.r 4.krebs.ni.r 4.search.ni.r
+42:0:a46e:c68b:4db0:3a27:7cfb:9ef4 ni.r cgit.ni.r krebs.ni.r search.ni.r
+42:0:a46e:c68b:4db0:3a27:7cfb:9ef4 6.ni.r 6.cgit.ni.r 6.krebs.ni.r 6.search.ni.r
 10.243.0.110 nomic.r cgit.nomic.r
 10.243.0.110 4.nomic.r 4.cgit.nomic.r
 42:0:a46e:7b8c:531e:67a5:9846:756e nomic.r cgit.nomic.r
@@ -586,10 +588,10 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 10.243.1.3 4.xerxes.r
 42:0:ce16::3 xerxes.r
 42:0:ce16::3 6.xerxes.r
-10.243.13.38 xu.r cgit.xu.r krebs.xu.r
-10.243.13.38 4.xu.r 4.cgit.xu.r 4.krebs.xu.r
-42:0:a46e:c3c:9c2f:1386:90fc:a489 xu.r cgit.xu.r krebs.xu.r
-42:0:a46e:c3c:9c2f:1386:90fc:a489 6.xu.r 6.cgit.xu.r 6.krebs.xu.r
+10.243.13.38 xu.r cgit.xu.r
+10.243.13.38 4.xu.r 4.cgit.xu.r
+42:0:a46e:c3c:9c2f:1386:90fc:a489 xu.r cgit.xu.r
+42:0:a46e:c3c:9c2f:1386:90fc:a489 6.xu.r 6.cgit.xu.r
 42:0:3c46:9b18:d5e7:d945:ccf8:829e yasmin.r
 42:0:3c46:9b18:d5e7:d945:ccf8:829e 6.yasmin.r
 10.243.0.14 yellow.r
