@@ -82,6 +82,8 @@ in {
 
     systemd.services."tinc.${netname}" = {
       restartTriggers = [ hosts ];
+      # upstream defines this, but since we also set reloadIfChanged, we get a warning.
+      reloadTriggers = lib.mkForce [ ];
       # Some hosts require VPN for nixos-rebuild, so we don't want to restart it on update
       reloadIfChanged = true;
       # also in https://github.com/NixOS/nixpkgs/pull/106715
