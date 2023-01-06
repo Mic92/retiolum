@@ -290,6 +290,8 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 42:0:3c46:123e:bbea:3529:db39:6764 6.qubasa.r
 42:0:a46e:983d:1d32:dc73:9f63:363c querel.r
 42:0:a46e:983d:1d32:dc73:9f63:363c 6.querel.r
+42:0:ce16::4d10 radio.r
+42:0:ce16::4d10 6.radio.r
 42:0:3c46:3f4b:cbe8:e276:a769:2a99 rauter.r
 42:0:3c46:3f4b:cbe8:e276:a769:2a99 6.rauter.r
 42:0:8809:48df:e952:9e30:78ff:ebc7 reagenzglas.r
@@ -428,6 +430,8 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 42:1:ce16::1 6.prism.w
 42:1:a46e:983d:1d32:dc73:9f63:363c querel.w
 42:1:a46e:983d:1d32:dc73:9f63:363c 6.querel.w
+42:1:ce16::4d10 radio.w
+42:1:ce16::4d10 6.radio.w
 42:1:e644:319b:262c:9d61:9712:6f5f rockit.w
 42:1:e644:319b:262c:9d61:9712:6f5f 6.rockit.w
 42:1:e644:e626:6023:4892:d72a:8e19 shackdev.w
