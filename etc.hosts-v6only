@@ -320,6 +320,8 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 42:0:3c46:d00e:e9e8:5fc8:987d:252f 6.runner.rtunreal.r
 42:0:3c46:7109:4c9a:3c86:73e0:a786 spinner.rtunreal.r
 42:0:3c46:7109:4c9a:3c86:73e0:a786 6.spinner.rtunreal.r
+42:0:a46e:1270:ed5a:d332:c106:437 ru.r
+42:0:a46e:1270:ed5a:d332:c106:437 6.ru.r
 42:0:3c46:bb6d:b913:8194:ffe9:e7c8 ruby.r
 42:0:3c46:bb6d:b913:8194:ffe9:e7c8 6.ruby.r
 42:0:3c46:53a7:e0e3:a2b6:471d:44a ryan.r
@@ -338,6 +340,8 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 42:0:3c46:88db:5123:1258:528f:bd9e 6.sicily.r 6.mukke.r
 42:0:ce16::5ce7 skynet.r
 42:0:ce16::5ce7 6.skynet.r
+42:0:e644:c47a:538d:7d9f:e78e:7baa snake.r
+42:0:e644:c47a:538d:7d9f:e78e:7baa 6.snake.r
 42:0:3c46:d31e:64a7:4a62:a9b0:118 sokrateslaptop.r
 42:0:3c46:d31e:64a7:4a62:a9b0:118 6.sokrateslaptop.r
 42:0:3c46:9f6d:2a87:ed17:fdb5:e504 sterni.r
