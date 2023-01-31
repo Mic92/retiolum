@@ -32,6 +32,13 @@ in {
         tinc network name
       '';
     };
+    networking.retiolum.port = mkOption {
+      type = types.int;
+      default = 655;
+      description = ''
+        port tinc is listen
+      '';
+    };
   };
 
   config = {
@@ -40,6 +47,7 @@ in {
       # allow resolving dns
       chroot = false;
       extraConfig = ''
+        Port = ${toString cfg.port}
         LocalDiscovery = yes
 
         ConnectTo = eva
@@ -90,8 +98,8 @@ in {
       serviceConfig.ExecReload = "${config.services.tinc.networks.${netname}.package}/bin/tinc -n ${netname} reload";
     };
 
-    networking.firewall.allowedTCPPorts = [ 655 ];
-    networking.firewall.allowedUDPPorts = [ 655 ];
+    networking.firewall.allowedTCPPorts = [ cfg.port ];
+    networking.firewall.allowedUDPPorts = [ cfg.port ];
 
     warnings = lib.optional (cfg.ipv6 == null) ''
       `networking.retiolum.ipv6` is not set
