@@ -64,10 +64,6 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 178.254.30.202 4.latte.i
 2a00:6800:3:18c::2 latte.i
 2a00:6800:3:18c::2 6.latte.i
-129.215.165.53 martha.i
-129.215.165.53 4.martha.i
-2001:630:3c1:164:6d4:c4ff:fe04:4aba martha.i
-2001:630:3c1:164:6d4:c4ff:fe04:4aba 6.martha.i
 131.159.102.10 mickey.i
 131.159.102.10 4.mickey.i
 2a09:80c0:102::10 mickey.i
@@ -246,8 +242,6 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 42:0:3c46:ac99:ae36:cb8:c551:ba27 6.manakish.r 6.manakish.kmein.r
 42:0:ac37:e5d5:7e26:bdee:77ea:b44f marohu.oxzi.r
 42:0:ac37:e5d5:7e26:bdee:77ea:b44f 6.marohu.oxzi.r
-42:0:3c46:5466:7dbe:f27a:673f:ea64 martha.r
-42:0:3c46:5466:7dbe:f27a:673f:ea64 6.martha.r
 42:0:ce16::113 massulus.r
 42:0:ce16::113 6.massulus.r
 42:0:3c46:6745:adf4:a844:26c4:bf91 matchbox.r
