@@ -204,6 +204,10 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 42:0:ce16::daed 6.daedalus.r
 42:0:3c46:550c:ec4f:2dbb:3b14:95 dan.r
 42:0:3c46:550c:ec4f:2dbb:3b14:95 6.dan.r
+10.243.0.6 dave.r
+10.243.0.6 4.dave.r
+42:0:61ea:b777:61ea:803:f885:3523 dave.r
+42:0:61ea:b777:61ea:803:f885:3523 6.dave.r
 10.243.29.192 dimitra.r
 10.243.29.192 4.dimitra.r
 42:0:3c46:ab7f:21e3:cb1d:d9e0:782d dimitra.r
