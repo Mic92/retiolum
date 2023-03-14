@@ -298,8 +298,8 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 42:0:e644:920e:23f6:353a:c09:5a66 6.omo.r 6.dcpp.omo.r 6.backup.makefu.r 6.torrent.omo.r 6.music.omo.r 6.music.makefu.r
 42:0:ca48:bfa7:deac:9452:799:37a onebutton.r
 42:0:ca48:bfa7:deac:9452:799:37a 6.onebutton.r
-42:0:ce16::12a orange.r
-42:0:ce16::12a 6.orange.r
+42:0:ce16::12a orange.r cgit.orange.r
+42:0:ce16::12a 6.orange.r 6.cgit.orange.r
 42:0:3c46:488f:d2ae:e265:bd57:dcbe papawhakaaro.r
 42:0:3c46:488f:d2ae:e265:bd57:dcbe 6.papawhakaaro.r
 42:0:3c46:2dfc:6991:79ff:a57a:9984 petrosilia.r
