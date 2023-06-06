@@ -214,6 +214,8 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 42:0:3c46:ab64:fa7c:171a:c94a:ac19 6.graham.r
 42:0:ce16::12ee green.r
 42:0:ce16::12ee 6.green.r
+42:0:6a0a:c4b1:2d6c:1f3f:a3c6:9d96 grill.r
+42:0:6a0a:c4b1:2d6c:1f3f:a3c6:9d96 6.grill.r
 42:0:e644:238d:3e46:c884:6ec5:16c gum.r blog.gum.r blog.makefu.r cache.gum.r cgit.gum.r dcpp.gum.r dcpp.nextgum.r graph.makefu.r logs.makefu.r netdata.makefu.r nextgum.r o.gum.r search.makefu.r stats.makefu.r torrent.gum.r tracker.makefu.r wiki.gum.r wiki.makefu.r warrior.gum.r rss.makefu.r sick.makefu.r dl.gum.r dl.makefu.r
 42:0:e644:238d:3e46:c884:6ec5:16c 6.gum.r 6.blog.gum.r 6.blog.makefu.r 6.cache.gum.r 6.cgit.gum.r 6.dcpp.gum.r 6.dcpp.nextgum.r 6.graph.makefu.r 6.logs.makefu.r 6.netdata.makefu.r 6.nextgum.r 6.o.gum.r 6.search.makefu.r 6.stats.makefu.r 6.torrent.gum.r 6.tracker.makefu.r 6.wiki.gum.r 6.wiki.makefu.r 6.warrior.gum.r 6.rss.makefu.r 6.sick.makefu.r 6.dl.gum.r 6.dl.makefu.r
 42:0:e644:9099:4f8:b9aa:3856:4e86 hasegateway.r
@@ -312,14 +314,12 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 42:0:ce16::12a 6.orange.r 6.cgit.orange.r
 42:0:3c46:488f:d2ae:e265:bd57:dcbe papawhakaaro.r tp.feliks.r
 42:0:3c46:488f:d2ae:e265:bd57:dcbe 6.papawhakaaro.r 6.tp.feliks.r
-42:0:3c46:2dfc:6991:79ff:a57a:9984 petrosilia.r
-42:0:3c46:2dfc:6991:79ff:a57a:9984 6.petrosilia.r
 42::443 ponte.r
 42::443 6.ponte.r
 42:0:3c46:b51c:b34d:b7e1:3b02:8d24 porree.r
 42:0:3c46:b51c:b34d:b7e1:3b02:8d24 6.porree.r
-42:0:ce16::1 prism.r cache.prism.r cgit.prism.r bota.r flix.r paste.r c.r p.r search.r
-42:0:ce16::1 6.prism.r 6.cache.prism.r 6.cgit.prism.r 6.bota.r 6.flix.r 6.paste.r 6.c.r 6.p.r 6.search.r
+42:0:ce16::1 prism.r cache.prism.r cgit.prism.r bota.r flix.r paste.r c.r p.r search.r wallpaper.r
+42:0:ce16::1 6.prism.r 6.cache.prism.r 6.cgit.prism.r 6.bota.r 6.flix.r 6.paste.r 6.c.r 6.p.r 6.search.r 6.wallpaper.r
 42:0:ca48:f98f:63d7:31ce:922b:245d puyak.r build.puyak.r cgit.puyak.r
 42:0:ca48:f98f:63d7:31ce:922b:245d 6.puyak.r 6.build.puyak.r 6.cgit.puyak.r
 42:0:3c46:123e:bbea:3529:db39:6764 qubasa.r
@@ -380,8 +380,6 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 42:0:4a6f::4265 6.tantulocarida.crustacea.r
 42:0:4a6f::4266 thecostraca.crustacea.r
 42:0:4a6f::4266 6.thecostraca.crustacea.r
-42:0:3c46:d517:31c3:3ef8:31e7:c0b8 toastbrot.r
-42:0:3c46:d517:31c3:3ef8:31e7:c0b8 6.toastbrot.r
 42:0:3c46:7eec:653c:73c1:91dc:f89e tpsw.r
 42:0:3c46:7eec:653c:73c1:91dc:f89e 6.tpsw.r
 42:0:e644:2215:73ba:f838:855e:945b tsp.r
