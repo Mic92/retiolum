@@ -284,6 +284,8 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 42:0:ce16::dea7 6.mors.r
 42:0:a46e:3cd3:1950:3ea6:785e:e124 mu.r
 42:0:a46e:3cd3:1950:3ea6:785e:e124 6.mu.r
+42:0:2c4b:29bf:c7e4:6775:339e:2a0 murks.r
+42:0:2c4b:29bf:c7e4:6775:339e:2a0 6.murks.r
 42:0:4a6f::4264 mystacocarida.crustacea.r
 42:0:4a6f::4264 6.mystacocarida.crustacea.r
 42:0:3c46:362d:a9aa:4996:c78e:839a nardole.r
@@ -412,8 +414,6 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 42:0:ca48:b76a:f76b:61b9:62db:75b 6.wolf.r 6.build.wolf.r 6.cgit.wolf.r 6.lounge.mpd.wolf.r
 42:0:3c46:6cfb:9e45:68c0:c60c:61c4 srounce.r
 42:0:3c46:6cfb:9e45:68c0:c60c:61c4 6.srounce.r
-42:0:a46e:b17d:cf4e:39ae:462a:f95 wu.r cgit.wu.r
-42:0:a46e:b17d:cf4e:39ae:462a:f95 6.wu.r 6.cgit.wu.r
 42:0:e644:162:2d71:1642:b726:b044 x.r
 42:0:e644:162:2d71:1642:b726:b044 6.x.r
 42:0:ce16::3 xerxes.r
@@ -514,8 +514,6 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 42:1:ce16::b1c 6.ubik.w
 42:1:a46e:656:944f:2308:3343:1e36 umz.w
 42:1:a46e:656:944f:2308:3343:1e36 6.umz.w
-42:1:a46e:b17d:cf4e:39ae:462a:f95 wu.w
-42:1:a46e:b17d:cf4e:39ae:462a:f95 6.wu.w
 42:1:e644:162:2d71:1642:b726:b044 x.w
 42:1:e644:162:2d71:1642:b726:b044 6.x.w
 42:1:ce16::3 xerxes.w
