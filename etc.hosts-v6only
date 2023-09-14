@@ -128,6 +128,8 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 42:0:ce16::ae12 6.aergia.r
 42:0:3c46:519d:1696:f464:9756:8727 ahorn.r
 42:0:3c46:519d:1696:f464:9756:8727 6.ahorn.r
+42:0:3c46:2868:6ad:5cdf:209a:943e aland.r
+42:0:3c46:2868:6ad:5cdf:209a:943e 6.aland.r
 42:0:a46e:99a9:9166:ae88:208:9645 alnus.r
 42:0:a46e:99a9:9166:ae88:208:9645 6.alnus.r
 42:0:3c46:1551:1906:bc7c:801f:3c4 amy.r
@@ -156,8 +158,8 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 42:0:a46e:dcc0:9508:394f:e63a:491f 6.bu.r
 42:0:e644:ab0:32cd:b619:1962:5 cake.r
 42:0:e644:ab0:32cd:b619:1962:5 6.cake.r
-42:0:3c46:872f:60bd:5179:38b3:cba9 catalonia.xkey.r
-42:0:3c46:872f:60bd:5179:38b3:cba9 6.catalonia.xkey.r
+42:0:3c46:872f:60bd:5179:38b3:cba9 catalonia.r
+42:0:3c46:872f:60bd:5179:38b3:cba9 6.catalonia.r
 42:0:3c46:7aa0:7688:64eb:dd1e:5efa centauri.r
 42:0:3c46:7aa0:7688:64eb:dd1e:5efa 6.centauri.r
 42:0:3c46:9a2d:93c6:b09e:fc2:92a9 christina.r
@@ -340,8 +342,6 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 42:0:3c46:f7cf:5f5a:8ed8:f139:be6d 6.river.r
 42:0:3c46:e1a5:350a:770c:ec9:f353 rock.r
 42:0:3c46:e1a5:350a:770c:ec9:f353 6.rock.r
-42:0:3c46:f99d:fde8:a301:1b09:caf4 rojava.xkey.r
-42:0:3c46:f99d:fde8:a301:1b09:caf4 6.rojava.xkey.r
 42:0:3c46:a5a1:618d:663a:f0f1:ec88 rose.r
 42:0:3c46:a5a1:618d:663a:f0f1:ec88 6.rose.r
 42:0:3c46:e3ce:cacc:bd95:dc9f:bc85 rtjure.r
@@ -362,8 +362,8 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 42:0:e644:d21:6292:46e0:57e:23e5 6.senderechner.r
 42:0:ce16::50da shodan.r
 42:0:ce16::50da 6.shodan.r
-42:0:3c46:88db:5123:1258:528f:bd9e sicily.xkey.r mukke.r bie.r
-42:0:3c46:88db:5123:1258:528f:bd9e 6.sicily.xkey.r 6.mukke.r 6.bie.r
+42:0:3c46:88db:5123:1258:528f:bd9e sicily.r mukke.r bie.r
+42:0:3c46:88db:5123:1258:528f:bd9e 6.sicily.r 6.mukke.r 6.bie.r
 42:0:ce16::5ce7 skynet.r
 42:0:ce16::5ce7 6.skynet.r
 42:0:e644:c47a:538d:7d9f:e78e:7baa snake.r
@@ -430,16 +430,12 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 42:1:ce16::ae12 6.aergia.w
 42:1:3c46:27cf:7b23:3a04:143a:d223 ahuatangata.w ndrd.feliks.w
 42:1:3c46:27cf:7b23:3a04:143a:d223 6.ahuatangata.w 6.ndrd.feliks.w
-42:1:3c46:2868:6ad:5cdf:209a:943e aland.xkey.w
-42:1:3c46:2868:6ad:5cdf:209a:943e 6.aland.xkey.w
 42:1:a46e:99a9:9166:ae88:208:9645 alnus.w
 42:1:a46e:99a9:9166:ae88:208:9645 6.alnus.w
 42:1:ce16::b1ce blue.w
 42:1:ce16::b1ce 6.blue.w
 42:1:ce16::17 coaxmetal.w
 42:1:ce16::17 6.coaxmetal.w
-42:1:3c46:ac45:3f4c:e530:ef19:16b cybercube.xkey.w
-42:1:3c46:ac45:3f4c:e530:ef19:16b 6.cybercube.xkey.w
 42:1:ce16::daed daedalus.w
 42:1:ce16::daed 6.daedalus.w
 42:1:ce16::d0 domsen-pixel.w
