@@ -122,6 +122,8 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 131.159.102.7 4.yasmin.i
 2a09:80c0:102::7 yasmin.i
 2a09:80c0:102::7 6.yasmin.i
+42:0:3097:d913:5908:197e:e50b:f11b Ra33it0.Ra33it0.r
+42:0:3097:d913:5908:197e:e50b:f11b 6.Ra33it0.Ra33it0.r
 42:0:3c46:b79b:e658:22f8:3a00:fc74 adelaide.r
 42:0:3c46:b79b:e658:22f8:3a00:fc74 6.adelaide.r
 42:0:3c46:f14:26a0:7b5e:349f:7f0b aendernix.r
@@ -360,6 +362,8 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 42:0:3c46:bb6d:b913:8194:ffe9:e7c8 6.ruby.r
 42:0:3c46:53a7:e0e3:a2b6:471d:44a ryan.r
 42:0:3c46:53a7:e0e3:a2b6:471d:44a 6.ryan.r
+42:0:2ef9:4913:20d:9d9f:229:fdd9 schlepptop.berber.r
+42:0:2ef9:4913:20d:9d9f:229:fdd9 6.schlepptop.berber.r
 42:0:e644:24ad:995f:5926:71d5:b26e sdev.r
 42:0:e644:24ad:995f:5926:71d5:b26e 6.sdev.r
 42:0:e644:d21:6292:46e0:57e:23e5 senderechner.r
