@@ -82,8 +82,8 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 2a09:80c0:102::2 6.nardole.i
 95.217.192.59 neoprism.i
 95.217.192.59 4.neoprism.i
-2a01:4f9:4a:4f1a::1 neoprism.i
-2a01:4f9:4a:4f1a::1 6.neoprism.i
+2a01:4f9:4a:4f1a::2 neoprism.i
+2a01:4f9:4a:4f1a::2 6.neoprism.i
 185.162.251.237 ni.i cgit.ni.i
 185.162.251.237 4.ni.i 4.cgit.ni.i
 2a03:4000:1a:cf::1 ni.i cgit.ni.i
@@ -122,8 +122,6 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 131.159.102.7 4.yasmin.i
 2a09:80c0:102::7 yasmin.i
 2a09:80c0:102::7 6.yasmin.i
-42:0:3097:d913:5908:197e:e50b:f11b Ra33it0.Ra33it0.r
-42:0:3097:d913:5908:197e:e50b:f11b 6.Ra33it0.Ra33it0.r
 42:0:3c46:b79b:e658:22f8:3a00:fc74 adelaide.r
 42:0:3c46:b79b:e658:22f8:3a00:fc74 6.adelaide.r
 10.243.29.172 aendernix.r
@@ -602,6 +600,10 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 42:0:4a6f::4266 6.thecostraca.crustacea.r
 10.243.117.12 toastbrot.r
 10.243.117.12 4.toastbrot.r
+10.243.43.12 tofu.dbalan.r
+10.243.43.12 4.tofu.dbalan.r
+42:0:3c46:3ce:cc52:e9ce:b39e:abd8 tofu.dbalan.r
+42:0:3c46:3ce:cc52:e9ce:b39e:abd8 6.tofu.dbalan.r
 10.243.183.236 tpsw.r
 10.243.183.236 4.tpsw.r
 42:0:3c46:7eec:653c:73c1:91dc:f89e tpsw.r
@@ -620,6 +622,8 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 10.243.0.12 4.ubik.r
 42:0:ce16::b1c ubik.r
 42:0:ce16::b1c 6.ubik.r
+42:0:3097:d913:5908:197e:e50b:f11b unispore.Ra33it0.r
+42:0:3097:d913:5908:197e:e50b:f11b 6.unispore.Ra33it0.r
 10.243.3.14 unnamed.r
 10.243.3.14 4.unnamed.r
 42:0:3c46:20f:e882:bcaa:db1e:2e2 unnamed.r
@@ -672,6 +676,10 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 10.243.2.34 4.zaatar.r 4.zaatar.kmein.r 4.grocy.kmein.r 4.moodle.kmein.r 4.radio.kmein.r 4.home.kmein.r
 42:0:3c46:156e:10b6:3bd6:6e82:b2cd zaatar.r zaatar.kmein.r grocy.kmein.r moodle.kmein.r radio.kmein.r home.kmein.r
 42:0:3c46:156e:10b6:3bd6:6e82:b2cd 6.zaatar.r 6.zaatar.kmein.r 6.grocy.kmein.r 6.moodle.kmein.r 6.radio.kmein.r 6.home.kmein.r
+10.243.13.43 zoppo.r
+10.243.13.43 4.zoppo.r
+42:0:a46e:205f:cc6b:6433:55d4:574b zoppo.r
+42:0:a46e:205f:cc6b:6433:55d4:574b 6.zoppo.r
 10.243.13.40 zu.r
 10.243.13.40 4.zu.r
 42:0:a46e:9c86:82ce:fa82:83d3:fda zu.r
@@ -798,5 +806,7 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 42:1:a46e:c3c:9c2f:1386:90fc:a489 6.xu.w
 42:1:ce16::3110 yellow.w
 42:1:ce16::3110 6.yellow.w
+42:1:a46e:205f:cc6b:6433:55d4:574b zoppo.w
+42:1:a46e:205f:cc6b:6433:55d4:574b 6.zoppo.w
 42:1:a46e:9c86:82ce:fa82:83d3:fda zu.w
 42:1:a46e:9c86:82ce:fa82:83d3:fda 6.zu.w
