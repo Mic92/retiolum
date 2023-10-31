@@ -106,6 +106,7 @@ in {
     '';
 
     systemd.network.enable = true;
+    networking.useNetworkd = true;
     systemd.network.networks."${netname}".extraConfig = ''
       [Match]
       Name = tinc.${netname}
