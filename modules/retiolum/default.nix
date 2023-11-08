@@ -94,8 +94,6 @@ in {
       reloadTriggers = lib.mkForce [ ];
       # Some hosts require VPN for nixos-rebuild, so we don't want to restart it on update
       reloadIfChanged = true;
-      # also in https://github.com/NixOS/nixpkgs/pull/106715
-      serviceConfig.ExecReload = "${config.services.tinc.networks.${netname}.package}/bin/tinc -n ${netname} reload";
     };
 
     networking.firewall.allowedTCPPorts = [ cfg.port ];
