@@ -212,6 +212,8 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 42:0:e644:8c94:c2d8:72a1:3438:b376 6.firecracker.r
 42:0:e644:43dc:2291:7db8:acdc:d33e flap.r
 42:0:e644:43dc:2291:7db8:acdc:d33e 6.flap.r
+42:0:a46e:6a8d:a4d0:ef23:161b:5b7c fu.r
+42:0:a46e:6a8d:a4d0:ef23:161b:5b7c 6.fu.r
 42:0:3c46:2c8b:a564:1213:9fb4:1bc4 ful.r
 42:0:3c46:2c8b:a564:1213:9fb4:1bc4 6.ful.r
 42:0:3c46:ab64:fa7c:171a:c94a:ac19 graham.r
@@ -456,6 +458,8 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 42:1:ce16::daed 6.daedalus.w
 42:1:ce16::d0 domsen-pixel.w
 42:1:ce16::d0 6.domsen-pixel.w
+42:1:a46e:6a8d:a4d0:ef23:161b:5b7c fu.w
+42:1:a46e:6a8d:a4d0:ef23:161b:5b7c 6.fu.w
 42:1:3c46:362d:4288:1990:c391:127b phone.kmein.w
 42:1:3c46:362d:4288:1990:c391:127b 6.phone.kmein.w
 42:1:ce16::12ee green.w
