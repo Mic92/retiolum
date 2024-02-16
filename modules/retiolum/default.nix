@@ -71,7 +71,9 @@ in {
       install-keys = pkgs.writeShellScript "install-keys" ''
         rm -rf /etc/tinc/${netname}/hosts
         cp -R ${hosts} /etc/tinc/${netname}/hosts
-        chown -R tinc.${netname} /etc/tinc/${netname}/hosts
+        # FIXME: drop this once everyone has the new tinc user
+        chown -R tinc-${netname} /etc/tinc/${netname}/hosts ||
+          chown -R tinc.${netname} /etc/tinc/${netname}/hosts
         chmod -R u+w /etc/tinc/${netname}/hosts
       '';
     in {
