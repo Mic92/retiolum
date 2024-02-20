@@ -114,11 +114,11 @@ in {
       [Link]
       # tested with `ping -6 turingmachine.r -s 1378`, not sure how low it must be
       MTUBytes=1377
+      RequiredForOnline = no
 
       [Network]
       ${optionalString (cfg.ipv4 != null) "Address=${cfg.ipv4}/12"}
       ${optionalString (cfg.ipv6 != null) "Address=${cfg.ipv6}/16"}
-      RequiredForOnline = no
       LinkLocalAddressing = no
     '';
   };
