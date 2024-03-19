@@ -198,6 +198,8 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 42:0:3c46:8a42:2b1:5ef8:7562:676a 6.eva.r 6.loki.r 6.prometheus.r 6.alertmanager.r
 42:0:3c46:70c7:8526:2adf:7451:8bbb eve.r tts.r flood.r warez.r bing-gpt.r navidrome.r
 42:0:3c46:70c7:8526:2adf:7451:8bbb 6.eve.r 6.tts.r 6.flood.r 6.warez.r 6.bing-gpt.r 6.navidrome.r
+42:0:3c46:aa73:82b0:14d7:7bf8:bf2 fatteh.r fatteh.kmein.r
+42:0:3c46:aa73:82b0:14d7:7bf8:bf2 6.fatteh.r 6.fatteh.kmein.r
 42:0:ca48:344c:cb3f:4a05:711b:f53e filebitch.r
 42:0:ca48:344c:cb3f:4a05:711b:f53e 6.filebitch.r
 42:0:e644:8862:affa:791e:7baa:d505 fileleech.r
