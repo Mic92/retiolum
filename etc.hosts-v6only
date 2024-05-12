@@ -318,8 +318,8 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 42:0:3c46:c04f:5f98:f4b1:7dca:11b4 6.nxrm.r
 42:0:3c46:2626:717f:6671:a6f8:d89d okelmann.r
 42:0:3c46:2626:717f:6671:a6f8:d89d 6.okelmann.r
-42:0:e644:920e:23f6:353a:c09:5a66 omo.r dcpp.omo.r backup.makefu.r torrent.omo.r music.omo.r music.makefu.r
-42:0:e644:920e:23f6:353a:c09:5a66 6.omo.r 6.dcpp.omo.r 6.backup.makefu.r 6.torrent.omo.r 6.music.omo.r 6.music.makefu.r
+42:0:e644:920e:23f6:353a:c09:5a66 omo.r dcpp.omo.r hass.omo.r backup.makefu.r torrent.omo.r music.omo.r music.makefu.r
+42:0:e644:920e:23f6:353a:c09:5a66 6.omo.r 6.dcpp.omo.r 6.hass.omo.r 6.backup.makefu.r 6.torrent.omo.r 6.music.omo.r 6.music.makefu.r
 42:0:ca48:bfa7:deac:9452:799:37a onebutton.r
 42:0:ca48:bfa7:deac:9452:799:37a 6.onebutton.r
 42:0:ce16::12a orange.r cgit.orange.r
@@ -358,12 +358,16 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 42:0:3c46:d00e:e9e8:5fc8:987d:252f 6.runner.rtunreal.r
 42:0:3c46:7109:4c9a:3c86:73e0:a786 spinner.rtunreal.r
 42:0:3c46:7109:4c9a:3c86:73e0:a786 6.spinner.rtunreal.r
+42:0:3c46:984c:8136:5e94:e2a0:f6e2 worker.rtunreal.r
+42:0:3c46:984c:8136:5e94:e2a0:f6e2 6.worker.rtunreal.r
 42:0:a46e:1270:ed5a:d332:c106:437 ru.r
 42:0:a46e:1270:ed5a:d332:c106:437 6.ru.r
 42:0:3c46:bb6d:b913:8194:ffe9:e7c8 ruby.r
 42:0:3c46:bb6d:b913:8194:ffe9:e7c8 6.ruby.r
 42:0:3c46:53a7:e0e3:a2b6:471d:44a ryan.r
 42:0:3c46:53a7:e0e3:a2b6:471d:44a 6.ryan.r
+42:0:e644:4a2f:1f93:4696:f1d9:ca sava.r
+42:0:e644:4a2f:1f93:4696:f1d9:ca 6.sava.r
 42:0:2ef9:4913:20d:9d9f:229:fdd9 schlepptop.berber.r
 42:0:2ef9:4913:20d:9d9f:229:fdd9 6.schlepptop.berber.r
 42:0:e644:24ad:995f:5926:71d5:b26e sdev.r
@@ -494,6 +498,8 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 42:1:e644:920e:23f6:353a:c09:5a66 6.omo.w 6.hass.omo.w 6.jelly.omo.w 6.jelly.makefu.w
 42:1:ce16::12a orange.w
 42:1:ce16::12a 6.orange.w
+42:1:a46e:3d82:9513:229d:4359:7826 pa.w
+42:1:a46e:3d82:9513:229d:4359:7826 6.pa.w
 42:1:ce16::a phone.w
 42:1:ce16::a 6.phone.w
 42:1:a46e:1eb7:85b4:2e17:287:7c85 pi.w
@@ -510,6 +516,8 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 42:1:3c46:bb9d:87b8:4272:ab04:a670 6.graphene.rtunreal.w
 42:1:a46e:1270:ed5a:d332:c106:437 ru.w
 42:1:a46e:1270:ed5a:d332:c106:437 6.ru.w
+42:1:e644:4a2f:1f93:4696:f1d9:ca savarcast.w
+42:1:e644:4a2f:1f93:4696:f1d9:ca 6.savarcast.w
 42:1:e644:e626:6023:4892:d72a:8e19 shackdev.w
 42:1:e644:e626:6023:4892:d72a:8e19 6.shackdev.w
 42:1:ce16::50da shodan.w
