@@ -192,10 +192,12 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 10.243.13.12 4.catalonia.r
 42:0:3c46:872f:60bd:5179:38b3:cba9 catalonia.r
 42:0:3c46:872f:60bd:5179:38b3:cba9 6.catalonia.r
-42:0:3c46:7aa0:7688:64eb:dd1e:5efa centauri.r
-42:0:3c46:7aa0:7688:64eb:dd1e:5efa 6.centauri.r
+42:0:3c46:34ed:2daf:e6c:7900:9f92 cherry.r
+42:0:3c46:34ed:2daf:e6c:7900:9f92 6.cherry.r
 42:0:3c46:9a2d:93c6:b09e:fc2:92a9 christina.r
 42:0:3c46:9a2d:93c6:b09e:fc2:92a9 6.christina.r
+42:0:3c46:45a:57da:862a:d247:151 chungus.r
+42:0:3c46:45a:57da:862a:d247:151 6.chungus.r
 42:0:3c46:e4e9:7814:459b:3f23:f455 clara.r
 42:0:3c46:e4e9:7814:459b:3f23:f455 6.clara.r
 10.243.0.17 coaxmetal.r
@@ -210,6 +212,8 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 10.243.136.237 4.crapi.r
 42:0:e644:b386:6e2a:c94f:34d6:b0ca crapi.r
 42:0:e644:b386:6e2a:c94f:34d6:b0ca 6.crapi.r
+42:0:3c46:6393:f3a2:2c1c:e8e0:a5a9 cream.r
+42:0:3c46:6393:f3a2:2c1c:e8e0:a5a9 6.cream.r
 10.243.42.63 crustacea.r
 10.243.42.63 4.crustacea.r
 42:0:4a6f::4263 crustacea.r
@@ -586,8 +590,6 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 10.243.142.104 4.sokrateslaptop.r
 42:0:3c46:d31e:64a7:4a62:a9b0:118 sokrateslaptop.r
 42:0:3c46:d31e:64a7:4a62:a9b0:118 6.sokrateslaptop.r
-42:0:3c46:c79d:8db5:9feb:4d21:7f26 sol.r
-42:0:3c46:c79d:8db5:9feb:4d21:7f26 6.sol.r
 10.243.227.163 studio.r
 10.243.227.163 4.studio.r
 42:0:e644:c049:da0d:aaba:4b15:6961 studio.r
