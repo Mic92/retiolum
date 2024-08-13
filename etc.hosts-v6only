@@ -58,6 +58,10 @@
 142.132.189.140 4.gum.i
 fe80::9400:1ff:fe24:33f4 gum.i
 fe80::9400:1ff:fe24:33f4 6.gum.i
+131.159.102.28 irene.i
+131.159.102.28 4.irene.i
+2a09:80c0:102::28 irene.i
+2a09:80c0:102::28 6.irene.i
 131.159.102.17 jack.i
 131.159.102.17 4.jack.i
 2a09:80c0:102::17 jack.i
@@ -108,6 +112,10 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 131.159.102.8 4.ryan.i
 2a09:80c0:102::8 ryan.i
 2a09:80c0:102::8 6.ryan.i
+131.159.38.2 tegan.i
+131.159.38.2 4.tegan.i
+2a09:80c0:38::2 tegan.i
+2a09:80c0:38::2 6.tegan.i
 131.159.102.25 vislor.i
 131.159.102.25 4.vislor.i
 2a09:80c0:102::25 vislor.i
@@ -116,6 +124,10 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 131.159.102.15 4.wilfred.i
 2a09:80c0:102::15 wilfred.i
 2a09:80c0:102::15 6.wilfred.i
+131.159.102.27 xavier.i
+131.159.102.27 4.xavier.i
+2a09:80c0:102::27 xavier.i
+2a09:80c0:102::27 6.xavier.i
 131.159.102.7 yasmin.i
 131.159.102.7 4.yasmin.i
 2a09:80c0:102::7 yasmin.i
@@ -216,8 +228,8 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 42:0:e644:43dc:2291:7db8:acdc:d33e 6.flap.r
 42:0:a46e:6a8d:a4d0:ef23:161b:5b7c fu.r
 42:0:a46e:6a8d:a4d0:ef23:161b:5b7c 6.fu.r
-42:0:3c46:2c8b:a564:1213:9fb4:1bc4 ful.r
-42:0:3c46:2c8b:a564:1213:9fb4:1bc4 6.ful.r
+42:0:3c46:2c8b:a564:1213:9fb4:1bc4 brockman.r ful.r news.r
+42:0:3c46:2c8b:a564:1213:9fb4:1bc4 6.brockman.r 6.ful.r 6.news.r
 42:0:3c46:ab64:fa7c:171a:c94a:ac19 graham.r
 42:0:3c46:ab64:fa7c:171a:c94a:ac19 6.graham.r
 42:0:ce16::12ee green.r
@@ -246,6 +258,8 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 42:0:ce16::1205 6.icarus.r
 42:0:ce16::16a2 ignavia.r
 42:0:ce16::16a2 6.ignavia.r
+42:0:3c46:b965:c30d:8b13:bcc7:59e8 irene.r
+42:0:3c46:b965:c30d:8b13:bcc7:59e8 6.irene.r
 42:0:3c46:bd54:30b:b799:a9a7:68c8 iti.r ltd.feliks.r
 42:0:3c46:bd54:30b:b799:a9a7:68c8 6.iti.r 6.ltd.feliks.r
 42:0:3c46:43ea:3161:1159:e7e6:ff78 jack.r stable-confusion.r vicuna.r
@@ -302,8 +316,8 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 42:0:3c46:362d:a9aa:4996:c78e:839a 6.nardole.r
 42:0:ce16::99 neoprism.r cache.neoprism.r
 42:0:ce16::99 6.neoprism.r 6.cache.neoprism.r
-42:0:ca48:c2c2:19fb:a0e9:95b9:794f news.r brockman.r go.r rss.r
-42:0:ca48:c2c2:19fb:a0e9:95b9:794f 6.news.r 6.brockman.r 6.go.r 6.rss.r
+42:0:ca48:c2c2:19fb:a0e9:95b9:794f go.r rss.r
+42:0:ca48:c2c2:19fb:a0e9:95b9:794f 6.go.r 6.rss.r
 42:0:a46e:c68b:4db0:3a27:7cfb:9ef4 ni.r cgit.ni.r krebs.ni.r search.ni.r
 42:0:a46e:c68b:4db0:3a27:7cfb:9ef4 6.ni.r 6.cgit.ni.r 6.krebs.ni.r 6.search.ni.r
 42:0:a46e:7b8c:531e:67a5:9846:756e nomic.r cgit.nomic.r
@@ -398,6 +412,8 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 42:0:3c46:2923:1c90:872:edd6:306 6.tahina.r 6.tahina.kmein.r
 42:0:4a6f::4265 tantulocarida.crustacea.r
 42:0:4a6f::4265 6.tantulocarida.crustacea.r
+42:0:3c46:9ccb:9e81:1280:7eac:63b2 tegan.r
+42:0:3c46:9ccb:9e81:1280:7eac:63b2 6.tegan.r
 42:0:4a6f::4266 thecostraca.crustacea.r
 42:0:4a6f::4266 6.thecostraca.crustacea.r
 42:0:3c46:3ce:cc52:e9ce:b39e:abd8 tofu.dbalan.r
@@ -434,6 +450,8 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 42:0:3c46:6cfb:9e45:68c0:c60c:61c4 6.srounce.r
 42:0:e644:162:2d71:1642:b726:b044 x.r
 42:0:e644:162:2d71:1642:b726:b044 6.x.r
+42:0:3c46:6e0b:a95d:c4e8:99ac:156e xavier.r
+42:0:3c46:6e0b:a95d:c4e8:99ac:156e 6.xavier.r
 42:0:ce16::3 xerxes.r
 42:0:ce16::3 6.xerxes.r
 42:0:a46e:c3c:9c2f:1386:90fc:a489 xu.r cgit.xu.r
