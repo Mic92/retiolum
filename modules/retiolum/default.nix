@@ -69,12 +69,14 @@ in {
 
     systemd.services."tinc.${netname}-host-keys" = let
       install-keys = pkgs.writeShellScript "install-keys" ''
+        rm -rf /etc/tinc/${netname}/hosts.tmp
+        mkdir /etc/tinc/${netname}/hosts.tmp
+        cp -R ${hosts}/* /etc/tinc/${netname}/hosts.tmp
+        chown -R tinc-${netname} /etc/tinc/${netname}/hosts.tmp
+        chmod -R u+w /etc/tinc/${netname}/hosts.tmp
+
         rm -rf /etc/tinc/${netname}/hosts
-        cp -R ${hosts} /etc/tinc/${netname}/hosts
-        # FIXME: drop this once everyone has the new tinc user
-        chown -R tinc-${netname} /etc/tinc/${netname}/hosts ||
-          chown -R tinc.${netname} /etc/tinc/${netname}/hosts
-        chmod -R u+w /etc/tinc/${netname}/hosts
+        mv /etc/tinc/${netname}/hosts{.tmp,}
       '';
     in {
       description = "Install tinc.${netname} host keys";
