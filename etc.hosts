@@ -346,6 +346,10 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 10.243.0.25 4.ignavia.r
 42:0:ce16::16a2 ignavia.r
 42:0:ce16::16a2 6.ignavia.r
+10.243.10.242 ioka.r ioka.feliks.r
+10.243.10.242 4.ioka.r 4.ioka.feliks.r
+42:0:3c46:f9bd:6a88:9f68:abf3:e13 ioka.r ioka.feliks.r
+42:0:3c46:f9bd:6a88:9f68:abf3:e13 6.ioka.r 6.ioka.feliks.r
 42:0:3c46:b965:c30d:8b13:bcc7:59e8 irene.r
 42:0:3c46:b965:c30d:8b13:bcc7:59e8 6.irene.r
 10.243.10.244 iti.r ltd.feliks.r
