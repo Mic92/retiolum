@@ -236,8 +236,8 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 42:0:ce16::12ee 6.green.r
 42:0:6a0a:c4b1:2d6c:1f3f:a3c6:9d96 grill.r
 42:0:6a0a:c4b1:2d6c:1f3f:a3c6:9d96 6.grill.r
-42:0:e644:238d:3e46:c884:6ec5:16c gum.r blog.gum.r blog.makefu.r cache.gum.r cgit.gum.r dcpp.gum.r dcpp.nextgum.r graph.makefu.r logs.makefu.r netdata.makefu.r nextgum.r o.gum.r search.makefu.r stats.makefu.r torrent.gum.r tracker.makefu.r wiki.gum.r wiki.makefu.r warrior.gum.r rss.makefu.r sick.makefu.r dl.gum.r dl.makefu.r
-42:0:e644:238d:3e46:c884:6ec5:16c 6.gum.r 6.blog.gum.r 6.blog.makefu.r 6.cache.gum.r 6.cgit.gum.r 6.dcpp.gum.r 6.dcpp.nextgum.r 6.graph.makefu.r 6.logs.makefu.r 6.netdata.makefu.r 6.nextgum.r 6.o.gum.r 6.search.makefu.r 6.stats.makefu.r 6.torrent.gum.r 6.tracker.makefu.r 6.wiki.gum.r 6.wiki.makefu.r 6.warrior.gum.r 6.rss.makefu.r 6.sick.makefu.r 6.dl.gum.r 6.dl.makefu.r
+42:0:e644:238d:3e46:c884:6ec5:16c gum.r blog.gum.r blog.makefu.r cache.gum.r cgit.gum.r git.gum.r dcpp.gum.r dcpp.nextgum.r graph.makefu.r logs.makefu.r netdata.makefu.r nextgum.r o.gum.r search.makefu.r stats.makefu.r torrent.gum.r tracker.makefu.r wiki.gum.r wiki.makefu.r warrior.gum.r rss.makefu.r sick.makefu.r dl.gum.r dl.makefu.r
+42:0:e644:238d:3e46:c884:6ec5:16c 6.gum.r 6.blog.gum.r 6.blog.makefu.r 6.cache.gum.r 6.cgit.gum.r 6.git.gum.r 6.dcpp.gum.r 6.dcpp.nextgum.r 6.graph.makefu.r 6.logs.makefu.r 6.netdata.makefu.r 6.nextgum.r 6.o.gum.r 6.search.makefu.r 6.stats.makefu.r 6.torrent.gum.r 6.tracker.makefu.r 6.wiki.gum.r 6.wiki.makefu.r 6.warrior.gum.r 6.rss.makefu.r 6.sick.makefu.r 6.dl.gum.r 6.dl.makefu.r
 42:0:e644:9099:4f8:b9aa:3856:4e86 hasegateway.r
 42:0:e644:9099:4f8:b9aa:3856:4e86 6.hasegateway.r
 42:0:3c46:fd4a:acf9:e971:6036:8047 helsinki.r
