@@ -246,7 +246,7 @@
       "10.244.1.4",
       "42:1:ce16::50da"
     ],
-    "publicKey": "0rI/I8FYQ3Pba7fQ9oyvtP4a54GWsPa+3zAiGIuyV30="
+    "publicKey": "J1RTYvWmWZrLe+IqOrmy+wYxGyc2j6sUjIGgM1No2AQ="
   },
   "skynet": {
     "allowedIPs": [
@@ -272,7 +272,7 @@
       "10.244.245.4",
       "42:1:e644:afb2:95c8:f993:8906:3132"
     ],
-    "publicKey": "yAKvxTvcEVdn+MeKsmptZkR3XSEue+wSyLxwcjBYxxo="
+    "publicKey": "Y6fOW2QDt0SsHT7hSVzzJYQVB3JI/txO4/FDB54Z52A="
   },
   "ubik": {
     "allowedIPs": [
