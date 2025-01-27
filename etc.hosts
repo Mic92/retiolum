@@ -1,3 +1,7 @@
+131.159.38.181 ace.i
+131.159.38.181 4.ace.i
+2a09:80c0:38::181 ace.i
+2a09:80c0:38::181 6.ace.i
 131.159.102.13 adelaide.i
 131.159.102.13 4.adelaide.i
 2a09:80c0:102::13 adelaide.i
@@ -58,6 +62,10 @@
 142.132.189.140 4.gum.i
 fe80::9400:1ff:fe24:33f4 gum.i
 fe80::9400:1ff:fe24:33f4 6.gum.i
+131.159.102.30 ian.i
+131.159.102.30 4.ian.i
+2a09:80c0:102::30 ian.i
+2a09:80c0:102::30 6.ian.i
 131.159.102.28 irene.i
 131.159.102.28 4.irene.i
 2a09:80c0:102::28 irene.i
@@ -132,6 +140,8 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 131.159.102.7 4.yasmin.i
 2a09:80c0:102::7 yasmin.i
 2a09:80c0:102::7 6.yasmin.i
+42:0:3c46:2844:2a0b:6287:a0e6:5cff ace.r
+42:0:3c46:2844:2a0b:6287:a0e6:5cff 6.ace.r
 42:0:3c46:b79b:e658:22f8:3a00:fc74 adelaide.r
 42:0:3c46:b79b:e658:22f8:3a00:fc74 6.adelaide.r
 10.243.29.172 aendernix.r
@@ -338,6 +348,8 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 10.243.54.54 4.hydrogen.r
 42:0:3c46:7e83:e7f9:b03:1036:3d69 hydrogen.r
 42:0:3c46:7e83:e7f9:b03:1036:3d69 6.hydrogen.r
+42:0:3c46:41e3:b54a:9512:7a4b:573f ian.r
+42:0:3c46:41e3:b54a:9512:7a4b:573f 6.ian.r
 10.243.133.114 icarus.r
 10.243.133.114 4.icarus.r
 42:0:ce16::1205 icarus.r
@@ -356,8 +368,8 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 10.243.10.244 4.iti.r 4.ltd.feliks.r
 42:0:3c46:bd54:30b:b799:a9a7:68c8 iti.r ltd.feliks.r
 42:0:3c46:bd54:30b:b799:a9a7:68c8 6.iti.r 6.ltd.feliks.r
-42:0:3c46:43ea:3161:1159:e7e6:ff78 jack.r stable-confusion.r vicuna.r
-42:0:3c46:43ea:3161:1159:e7e6:ff78 6.jack.r 6.stable-confusion.r 6.vicuna.r
+42:0:3c46:43ea:3161:1159:e7e6:ff78 jack.r
+42:0:3c46:43ea:3161:1159:e7e6:ff78 6.jack.r
 42:0:3c46:d295:dc35:5ec7:5a2d:c4a1 jackson.r
 42:0:3c46:d295:dc35:5ec7:5a2d:c4a1 6.jackson.r
 10.243.5.6 jongepad.r
@@ -418,12 +430,6 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 42:0:ce16::113 6.massulus.r
 42:0:3c46:6745:adf4:a844:26c4:bf91 matchbox.r
 42:0:3c46:6745:adf4:a844:26c4:bf91 6.matchbox.r
-10.243.29.200 maurice.r
-10.243.29.200 4.maurice.r
-42:0:3c46:eea1:4d78:e62d:899a:4d7b maurice.r
-42:0:3c46:eea1:4d78:e62d:899a:4d7b 6.maurice.r
-42:0:3c46:8c2d:cc63:72e:d4eb:334d mauricehome.r
-42:0:3c46:8c2d:cc63:72e:d4eb:334d 6.mauricehome.r
 42:0:3c46:a85d:33c6:14ca:3cf7:8827 mickey.r
 42:0:3c46:a85d:33c6:14ca:3cf7:8827 6.mickey.r
 42:0:eac6:5e21:e83c:94e5:7917:6dd2 mokemoke.ynnel.r
@@ -542,8 +548,6 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 42:0:8809:48df:e952:9e30:78ff:ebc7 6.reagenzglas.r
 42:0:3c46:f7cf:5f5a:8ed8:f139:be6d river.r
 42:0:3c46:f7cf:5f5a:8ed8:f139:be6d 6.river.r
-42:0:3c46:e1a5:350a:770c:ec9:f353 rock.r
-42:0:3c46:e1a5:350a:770c:ec9:f353 6.rock.r
 42:0:3c46:a5a1:618d:663a:f0f1:ec88 rose.r
 42:0:3c46:a5a1:618d:663a:f0f1:ec88 6.rose.r
 10.243.122.122 rtjure.r
@@ -702,10 +706,10 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 42:0:a46e:c3c:9c2f:1386:90fc:a489 6.xu.r 6.cgit.xu.r
 42:0:3c46:9b18:d5e7:d945:ccf8:829e yasmin.r
 42:0:3c46:9b18:d5e7:d945:ccf8:829e 6.yasmin.r
-10.243.0.14 yellow.r jelly.r flix.r radar.r sonar.r transmission.r
-10.243.0.14 4.yellow.r 4.jelly.r 4.flix.r 4.radar.r 4.sonar.r 4.transmission.r
-42:0:ce16::3110 yellow.r jelly.r flix.r radar.r sonar.r transmission.r
-42:0:ce16::3110 6.yellow.r 6.jelly.r 6.flix.r 6.radar.r 6.sonar.r 6.transmission.r
+10.243.0.14 yellow.r jelly.r flix.r radar.r sonar.r jellyseer.r transmission.r
+10.243.0.14 4.yellow.r 4.jelly.r 4.flix.r 4.radar.r 4.sonar.r 4.jellyseer.r 4.transmission.r
+42:0:ce16::3110 yellow.r jelly.r flix.r radar.r sonar.r jellyseer.r transmission.r
+42:0:ce16::3110 6.yellow.r 6.jelly.r 6.flix.r 6.radar.r 6.sonar.r 6.jellyseer.r 6.transmission.r
 10.243.2.34 zaatar.r zaatar.kmein.r grocy.kmein.r moodle.kmein.r radio.kmein.r home.kmein.r
 10.243.2.34 4.zaatar.r 4.zaatar.kmein.r 4.grocy.kmein.r 4.moodle.kmein.r 4.radio.kmein.r 4.home.kmein.r
 42:0:3c46:156e:10b6:3bd6:6e82:b2cd zaatar.r zaatar.kmein.r grocy.kmein.r moodle.kmein.r radio.kmein.r home.kmein.r
