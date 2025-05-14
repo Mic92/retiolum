@@ -42,6 +42,12 @@
     ],
     "publicKey": "1/ZN/YvIBpWJGIwf0EE5NpxnQVCsde8f5WR3LExRW0M="
   },
+  "domi": {
+    "allowedIPs": [
+      "10.244.10.108"
+    ],
+    "publicKey": "Yy1pvM0lEwaXuOwBoFGNYhHeyYEKuR/rovE0/myWyCI="
+  },
   "domsen-pixel": {
     "allowedIPs": [
       "10.244.1.17",

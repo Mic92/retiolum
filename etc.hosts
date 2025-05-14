@@ -738,6 +738,8 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 42:1:ce16::17 6.coaxmetal.w
 42:1:ce16::daed daedalus.w
 42:1:ce16::daed 6.daedalus.w
+10.244.10.108 domi.w
+10.244.10.108 4.domi.w
 10.244.1.17 domsen-pixel.w
 10.244.1.17 4.domsen-pixel.w
 42:1:ce16::d0 domsen-pixel.w
