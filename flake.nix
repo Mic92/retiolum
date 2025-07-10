@@ -20,6 +20,7 @@
       nixosModules.ca = ./modules/ca;
       darwinModules.tinc = ./darwin/tinc.nix;
       darwinModules.retiolum = ./darwin/retiolum.nix;
+      darwinModules.ca = ./darwin/ca.nix;
 
       # Example Darwin configuration for testing
       darwinConfigurations.example = nix-darwin.lib.darwinSystem {
@@ -27,6 +28,7 @@
         modules = [
           self.darwinModules.tinc
           self.darwinModules.retiolum
+          self.darwinModules.ca
           (
             { pkgs, ... }:
             {
@@ -41,6 +43,12 @@
                 nodename = "example";
                 ipv4 = "10.243.99.99";
                 ipv6 = "42:0:3c46:dead:beef:dead:beef:dead";
+              };
+
+              # Enable retiolum CA
+              retiolum.ca = {
+                trustRoot = false;  # Don't trust root CA by default
+                trustIntermediate = true;  # Trust intermediate CA for .r and .w domains
               };
 
               # Required for nix-darwin
