@@ -335,7 +335,7 @@ in
                   settings = {
                     # On macOS, use utun device
                     DeviceType = mkDefault "utun";
-                    Device = mkDefault "utun0";
+                    Device = mkDefault "utun10";
                     Name = mkDefault (if config.name == null then "$HOST" else config.name);
                     Ed25519PrivateKeyFile = mkIf (config.ed25519PrivateKeyFile != null) (
                       mkDefault config.ed25519PrivateKeyFile
