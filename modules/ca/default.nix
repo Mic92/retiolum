@@ -1,6 +1,13 @@
-{ config, lib, pkgs, ... }: let
+{
+  config,
+  lib,
+  pkgs,
+  ...
+}:
+let
   cfg = config.retiolum.ca;
-in {
+in
+{
   options.retiolum.ca = {
     rootCA = lib.mkOption {
       type = lib.types.str;

@@ -1,4 +1,9 @@
-{ config, pkgs, lib, ... }:
+{
+  config,
+  pkgs,
+  lib,
+  ...
+}:
 
 with lib;
 
@@ -7,7 +12,8 @@ let
   cfg = config.networking.retiolum;
   hosts = ../../hosts;
   genipv6 = import ./genipv6.nix { inherit lib; };
-in {
+in
+{
   options = {
     networking.retiolum.ipv4 = mkOption {
       type = types.nullOr types.str;
@@ -18,9 +24,10 @@ in {
     };
     networking.retiolum.ipv6 = mkOption {
       type = types.str;
-      default = (genipv6 "retiolum" "external"  {
-        hostName = cfg.nodename;
-      }).address;
+      default =
+        (genipv6 "retiolum" "external" {
+          hostName = cfg.nodename;
+        }).address;
       description = ''
         own ipv6 address
       '';
@@ -58,7 +65,8 @@ in {
       '';
     };
 
-    networking.extraHosts = if (cfg.ipv4 == null) then
+    networking.extraHosts =
+      if (cfg.ipv4 == null) then
         builtins.readFile ../../etc.hosts-v6only
       else
         builtins.readFile ../../etc.hosts;
@@ -67,30 +75,32 @@ in {
       config.services.tinc.networks.${netname}.package
     ];
 
-    systemd.services."tinc.${netname}-host-keys" = let
-      install-keys = pkgs.writeShellScript "install-keys" ''
-        rm -rf /etc/tinc/${netname}/hosts.tmp
-        mkdir /etc/tinc/${netname}/hosts.tmp
-        cp -R ${hosts}/* /etc/tinc/${netname}/hosts.tmp
-        chown -R tinc-${netname} /etc/tinc/${netname}/hosts.tmp
-        chmod -R u+w /etc/tinc/${netname}/hosts.tmp
+    systemd.services."tinc.${netname}-host-keys" =
+      let
+        install-keys = pkgs.writeShellScript "install-keys" ''
+          rm -rf /etc/tinc/${netname}/hosts.tmp
+          mkdir /etc/tinc/${netname}/hosts.tmp
+          cp -R ${hosts}/* /etc/tinc/${netname}/hosts.tmp
+          chown -R tinc-${netname} /etc/tinc/${netname}/hosts.tmp
+          chmod -R u+w /etc/tinc/${netname}/hosts.tmp
 
-        rm -rf /etc/tinc/${netname}/hosts
-        mv /etc/tinc/${netname}/hosts{.tmp,}
-      '';
-    in {
-      description = "Install tinc.${netname} host keys";
-      wantedBy = [ "multi-user.target" ];
-      before = [ "tinc.${netname}.service" ];
-      # we reload here to be reloaded before tinc reloads
-      reloadIfChanged = true;
-      serviceConfig = {
-        Type = "oneshot";
-        ExecStart = install-keys;
-        ExecReload = install-keys;
-        RemainAfterExit = true;
+          rm -rf /etc/tinc/${netname}/hosts
+          mv /etc/tinc/${netname}/hosts{.tmp,}
+        '';
+      in
+      {
+        description = "Install tinc.${netname} host keys";
+        wantedBy = [ "multi-user.target" ];
+        before = [ "tinc.${netname}.service" ];
+        # we reload here to be reloaded before tinc reloads
+        reloadIfChanged = true;
+        serviceConfig = {
+          Type = "oneshot";
+          ExecStart = install-keys;
+          ExecReload = install-keys;
+          RemainAfterExit = true;
+        };
       };
-    };
 
     systemd.services."tinc.${netname}" = {
       restartTriggers = [ hosts ];
