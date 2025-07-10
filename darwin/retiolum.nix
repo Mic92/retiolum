@@ -68,7 +68,7 @@ in
       let
         updateHosts = pkgs.writeShellScript "update-hosts" ''
           # Retiolum hosts content
-          if [ "${cfg.ipv4}" = "" ]; then
+          if [ "${toString cfg.ipv4}" = "" ]; then
             hosts_content=$(cat ${../etc.hosts-v6only})
           else
             hosts_content=$(cat ${../etc.hosts})
