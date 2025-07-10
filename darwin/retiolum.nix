@@ -63,6 +63,27 @@ in
       '';
     };
 
+    # Create tinc-up script to configure the interface
+    environment.etc."tinc/${netname}/tinc-up" = {
+      mode = "0755";
+      text = ''
+        #!/bin/sh
+        # Configure the interface
+        ${optionalString (cfg.ipv4 != null) ''
+          /sbin/ifconfig $INTERFACE inet ${cfg.ipv4} netmask 255.240.0.0
+        ''}
+        ${optionalString (cfg.ipv6 != null) ''
+          /sbin/ifconfig $INTERFACE inet6 ${cfg.ipv6} prefixlen 16
+        ''}
+
+        # Set MTU
+        /sbin/ifconfig $INTERFACE mtu 1377
+
+        # Add route for retiolum IPv6 network (ignore error if already exists)
+        /sbin/route -n add -inet6 42::/16 -interface $INTERFACE 2>/dev/null || true
+      '';
+    };
+
     # Darwin-specific hosts file management with delimiters
     launchd.daemons."tinc.${netname}-hosts-update" =
       let
@@ -155,44 +176,6 @@ in
           RunAtLoad = true;
           StandardErrorPath = "/var/log/tinc.${netname}-host-keys.log";
           StandardOutPath = "/var/log/tinc.${netname}-host-keys.log";
-        };
-      };
-
-    # Darwin doesn't have systemd-networkd, so we need to configure the network interface differently
-    # This will need to be done via launchd and ifconfig
-    launchd.daemons."tinc.${netname}-network" =
-      let
-        tincConf = config.services.tinc.networks.${netname};
-        # Get the Device from tinc configuration
-        interface = tincConf.settings.Device;
-      in
-      {
-        command = toString (
-          pkgs.writeShellScript "tinc-network-setup" ''
-            # Wait for the tinc interface to come up
-            while ! ifconfig ${interface} >/dev/null 2>&1; do
-              sleep 1
-            done
-
-            # Configure the interface
-            ${optionalString (cfg.ipv4 != null) ''
-              ifconfig ${interface} inet ${cfg.ipv4} netmask 255.240.0.0
-            ''}
-            ${optionalString (cfg.ipv6 != null) ''
-              ifconfig ${interface} inet6 ${cfg.ipv6} prefixlen 16
-            ''}
-
-            # Set MTU
-            ifconfig ${interface} mtu 1377
-          ''
-        );
-
-        serviceConfig = {
-          Label = "org.tinc-vpn.${netname}.network";
-          RunAtLoad = true;
-          KeepAlive = false;
-          StandardErrorPath = "/var/log/tinc.${netname}-network.log";
-          StandardOutPath = "/var/log/tinc.${netname}-network.log";
         };
       };
 
