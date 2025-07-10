@@ -266,6 +266,8 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 42:0:3c46:8a42:2b1:5ef8:7562:676a 6.eva.r 6.loki.r 6.prometheus.r 6.alertmanager.r
 42:0:3c46:70c7:8526:2adf:7451:8bbb eve.r flood.r warez.r ca.r
 42:0:3c46:70c7:8526:2adf:7451:8bbb 6.eve.r 6.flood.r 6.warez.r 6.ca.r
+42:0:3c46:e871:f215:c159:a980:ba59 evo.r
+42:0:3c46:e871:f215:c159:a980:ba59 6.evo.r
 10.243.2.77 fatteh.r fatteh.kmein.r
 10.243.2.77 4.fatteh.r 4.fatteh.kmein.r
 42:0:3c46:aa73:82b0:14d7:7bf8:bf2 fatteh.r fatteh.kmein.r
