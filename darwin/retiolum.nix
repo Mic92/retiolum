@@ -63,11 +63,73 @@ in
       '';
     };
 
-    environment.etc."hosts".text =
-      if (cfg.ipv4 == null) then
-        builtins.readFile ../etc.hosts-v6only
-      else
-        builtins.readFile ../etc.hosts;
+    # Darwin-specific hosts file management with delimiters
+    launchd.daemons."tinc.${netname}-hosts-update" =
+      let
+        updateHosts = pkgs.writeShellScript "update-hosts" ''
+          # Retiolum hosts content
+          if [ "${cfg.ipv4}" = "" ]; then
+            hosts_content=$(cat ${../etc.hosts-v6only})
+          else
+            hosts_content=$(cat ${../etc.hosts})
+          fi
+
+          # Check if /private/etc/hosts exists
+          if [ ! -f /private/etc/hosts ]; then
+            echo "Error: /private/etc/hosts not found"
+            exit 1
+          fi
+
+          # Create a temporary file in /private/etc/
+          temp_file=$(mktemp /private/etc/hosts.XXXXXX)
+
+          # Set proper permissions for the temp file
+          chmod 644 "$temp_file"
+
+          # Check if retiolum section exists
+          if grep -q "^# BEGIN RETIOLUM HOSTS$" /private/etc/hosts; then
+            # Update existing section
+            awk '
+              BEGIN { in_retiolum = 0 }
+              /^# BEGIN RETIOLUM HOSTS$/ { in_retiolum = 1; next }
+              /^# END RETIOLUM HOSTS$/ { in_retiolum = 0; next }
+              !in_retiolum { print }
+            ' /private/etc/hosts > "$temp_file"
+
+            # Add the retiolum section
+            echo "# BEGIN RETIOLUM HOSTS" >> "$temp_file"
+            echo "$hosts_content" >> "$temp_file"
+            echo "# END RETIOLUM HOSTS" >> "$temp_file"
+
+            # Copy everything after the retiolum section
+            awk '
+              BEGIN { in_retiolum = 0; after_retiolum = 0 }
+              /^# BEGIN RETIOLUM HOSTS$/ { in_retiolum = 1; next }
+              /^# END RETIOLUM HOSTS$/ { in_retiolum = 0; after_retiolum = 1; next }
+              after_retiolum && !in_retiolum { print }
+            ' /private/etc/hosts >> "$temp_file"
+          else
+            # First time - append to existing hosts file
+            cp /private/etc/hosts "$temp_file"
+            echo "" >> "$temp_file"  # Ensure newline before our section
+            echo "# BEGIN RETIOLUM HOSTS" >> "$temp_file"
+            echo "$hosts_content" >> "$temp_file"
+            echo "# END RETIOLUM HOSTS" >> "$temp_file"
+          fi
+
+          # Replace the hosts file (permissions already set on temp file)
+          mv "$temp_file" /private/etc/hosts
+        '';
+      in
+      {
+        command = toString updateHosts;
+        serviceConfig = {
+          Label = "org.tinc-vpn.${netname}.hosts-update";
+          RunAtLoad = true;
+          StandardErrorPath = "/var/log/tinc.${netname}-hosts-update.log";
+          StandardOutPath = "/var/log/tinc.${netname}-hosts-update.log";
+        };
+      };
 
     environment.systemPackages = [
       config.services.tinc.networks.${netname}.package
@@ -98,7 +160,7 @@ in
 
     # Darwin doesn't have systemd-networkd, so we need to configure the network interface differently
     # This will need to be done via launchd and ifconfig
-    launchd.daemons."tinc.${netname}-network" = 
+    launchd.daemons."tinc.${netname}-network" =
       let
         tincConf = config.services.tinc.networks.${netname};
         # Get the Device from tinc configuration
@@ -125,14 +187,14 @@ in
           ''
         );
 
-      serviceConfig = {
-        Label = "org.tinc-vpn.${netname}.network";
-        RunAtLoad = true;
-        KeepAlive = false;
-        StandardErrorPath = "/var/log/tinc.${netname}-network.log";
-        StandardOutPath = "/var/log/tinc.${netname}-network.log";
+        serviceConfig = {
+          Label = "org.tinc-vpn.${netname}.network";
+          RunAtLoad = true;
+          KeepAlive = false;
+          StandardErrorPath = "/var/log/tinc.${netname}-network.log";
+          StandardOutPath = "/var/log/tinc.${netname}-network.log";
+        };
       };
-    };
 
     warnings = lib.optional (cfg.ipv6 == null) ''
       `networking.retiolum.ipv6` is not set
