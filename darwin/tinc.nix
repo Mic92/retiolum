@@ -332,21 +332,18 @@ in
                     ${host.rsaPublicKey}
                   '') config.hostSettings;
 
-                  settings = mkMerge [
-                    # On macOS, don't set DeviceType to let tinc automatically use utun
-                    (mkIf (!pkgs.stdenv.isDarwin) {
-                      DeviceType = mkDefault config.interfaceType;
-                    })
-                    {
-                      Name = mkDefault (if config.name == null then "$HOST" else config.name);
-                      Ed25519PrivateKeyFile = mkIf (config.ed25519PrivateKeyFile != null) (
-                        mkDefault config.ed25519PrivateKeyFile
-                      );
-                      PrivateKeyFile = mkIf (config.rsaPrivateKeyFile != null) (mkDefault config.rsaPrivateKeyFile);
-                      ListenAddress = mkIf (config.listenAddress != null) (mkDefault config.listenAddress);
-                      BindToAddress = mkIf (config.bindToAddress != null) (mkDefault config.bindToAddress);
-                    }
-                  ];
+                  settings = {
+                    # On macOS, use utun device
+                    DeviceType = mkDefault "utun";
+                    Device = mkDefault "utun0";
+                    Name = mkDefault (if config.name == null then "$HOST" else config.name);
+                    Ed25519PrivateKeyFile = mkIf (config.ed25519PrivateKeyFile != null) (
+                      mkDefault config.ed25519PrivateKeyFile
+                    );
+                    PrivateKeyFile = mkIf (config.rsaPrivateKeyFile != null) (mkDefault config.rsaPrivateKeyFile);
+                    ListenAddress = mkIf (config.listenAddress != null) (mkDefault config.listenAddress);
+                    BindToAddress = mkIf (config.bindToAddress != null) (mkDefault config.bindToAddress);
+                  };
                 };
               }
             )
