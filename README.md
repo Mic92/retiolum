@@ -10,22 +10,69 @@ If you are a flake user:
     retiolum.url = "git+https://git.thalheim.io/Mic92/retiolum";
   };
   outputs = { retiolum, ... }: {
-    # Than include `retiolum.nixosModules.retiolum` nixos module in your nixos configurations
-    # To add the retiolum ssl certificate include `retiolum.nixosModules.ca`
+    nixosConfigurations.myhost = nixpkgs.lib.nixosSystem {
+      modules = [
+        retiolum.nixosModules.retiolum
+        # To add the retiolum ssl certificate:
+        # retiolum.nixosModules.ca
+        {
+          # Configure retiolum
+          networking.retiolum = {
+            nodename = "myhost";       # Optional, defaults to hostname
+            ipv4 = "10.243.29.123";   # Your assigned IPv4 (optional)
+            ipv6 = "42:0:3c46:...";   # Your assigned IPv6 (or auto-generated)
+            port = 655;               # Optional, defaults to 655
+          };
+        }
+      ];
+    };
   };
 }
 ```
 
-First add your key to https://github.com/krebs/stockholm
-Mic92's stockholm fork will than update this repository itself.
+## Darwin (macOS) usage
+
+For nix-darwin users:
 
 ```nix
 {
-  # The ipv6 address is generated based on the hostname. 
-  # optional one can specify an ipv4 address, but this is not needed.
-  # networking.retiolum.ipv4 = "10.240.0.0";
+  inputs = {
+    retiolum.url = "git+https://git.thalheim.io/Mic92/retiolum";
+    darwin.url = "github:LnL7/nix-darwin";
+  };
+  outputs = { retiolum, darwin, ... }: {
+    darwinConfigurations.mymac = darwin.lib.darwinSystem {
+      modules = [
+        # Import both modules
+        retiolum.darwinModules.tinc
+        retiolum.darwinModules.retiolum
+        {
+          # Configure retiolum
+          networking.retiolum = {
+            nodename = "mymac";       # Optional, defaults to hostname
+            ipv4 = "10.243.29.124";   # Your assigned IPv4 (optional)
+            ipv6 = "42:0:3c46:...";   # Your assigned IPv6 (or auto-generated)
+            port = 655;               # Optional, defaults to 655
+          };
+        }
+      ];
+    };
+  };
 }
 ```
+
+## Features
+
+The NixOS and Darwin modules will automatically:
+- Install and configure tinc
+- Set up the retiolum network interface
+- Install host keys from the repository
+- Configure /etc/hosts with all retiolum hosts
+- Generate keys on first start if needed
+- Set up systemd services (NixOS) or launchd daemons (Darwin)
+
+First add your key to https://github.com/krebs/stockholm
+Mic92's stockholm fork will than update this repository itself.
 
 
 ## VPN Setup
@@ -74,13 +121,13 @@ You should retrieve hosts' information after the restart.
 The hosts folder should appear in /etc/tinc/retiolum
 The list of the hosts is also available here : https://retiolum.thalheim.io/etc.hosts
 
-## SSH Setup
-1. Generate an ssh key-pair or provide an already existing public ssh key to one of the authorised users.
-2. One of the authorised users should add/modify the user's information in **/modules/users.nix** (https://github.com/Mic92/doctor-cluster-config)
-3. Push the change to the repository
-4. Log in to **rose**, pull the update(s) (if it's not done in the machine itelf)
-5. Get in **/etc/nixos/** directory and run the script **./update-all.sh**
-```
-    $ cd /etc/nixos
-    $ ./update-all.sh
+## Testing
+
+Test configurations are included in the flake:
+```bash
+# Test NixOS configuration
+nix build .#nixosConfigurations.example.config.system.build.toplevel
+
+# Test Darwin configuration
+nix build .#darwinConfigurations.example.system
 ```
