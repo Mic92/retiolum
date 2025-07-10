@@ -3,8 +3,8 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
-    darwin = {
-      url = "github:LnL7/nix-darwin";
+    nix-darwin = {
+      url = "github:nix-darwin/nix-darwin";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
@@ -13,7 +13,7 @@
     {
       self,
       nixpkgs,
-      darwin,
+      nix-darwin,
     }:
     {
       nixosModules.retiolum = ./modules/retiolum;
@@ -22,7 +22,7 @@
       darwinModules.retiolum = ./darwin/retiolum.nix;
 
       # Example Darwin configuration for testing
-      darwinConfigurations.example = darwin.lib.darwinSystem {
+      darwinConfigurations.example = nix-darwin.lib.darwinSystem {
         system = "aarch64-darwin";
         modules = [
           self.darwinModules.tinc
