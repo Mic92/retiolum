@@ -63,33 +63,6 @@ in
       '';
     };
 
-    # Create tinc-up script to configure the interface
-    environment.etc."tinc/${netname}/tinc-up" = {
-      text = ''
-        #!/bin/sh
-        # Configure the interface
-        ${optionalString (cfg.ipv4 != null) ''
-          /sbin/ifconfig $INTERFACE inet ${cfg.ipv4} netmask 255.240.0.0
-        ''}
-        ${optionalString (cfg.ipv6 != null) ''
-          /sbin/ifconfig $INTERFACE inet6 ${cfg.ipv6} prefixlen 16
-        ''}
-
-        # Set MTU
-        /sbin/ifconfig $INTERFACE mtu 1377
-
-        # Add route for retiolum IPv6 network (ignore error if already exists)
-        /sbin/route -n add -inet6 42::/16 -interface $INTERFACE 2>/dev/null || true
-      '';
-    };
-
-    # Make tinc-up executable during activation
-    system.activationScripts.tinc-permissions.text = ''
-      # Make tinc-up executable
-      if [ -f /etc/tinc/${netname}/tinc-up ]; then
-        chmod 755 /etc/tinc/${netname}/tinc-up
-      fi
-    '';
 
     # Darwin-specific hosts file management with delimiters
     launchd.daemons."tinc.${netname}-hosts-update" =
@@ -163,9 +136,25 @@ in
       config.services.tinc.networks.${netname}.package
     ];
 
-    # Darwin-specific implementation for installing host keys
+    # Darwin-specific implementation for installing host keys and tinc-up script
     launchd.daemons."tinc.${netname}-host-keys" =
       let
+        tinc-up-script = pkgs.writeText "tinc-up" ''
+          #!/bin/sh
+          # Configure the interface
+          ${optionalString (cfg.ipv4 != null) ''
+            /sbin/ifconfig $INTERFACE inet ${cfg.ipv4} netmask 255.240.0.0
+          ''}
+          ${optionalString (cfg.ipv6 != null) ''
+            /sbin/ifconfig $INTERFACE inet6 ${cfg.ipv6} prefixlen 16
+          ''}
+
+          # Set MTU
+          /sbin/ifconfig $INTERFACE mtu 1377
+
+          # Add route for retiolum IPv6 network (ignore error if already exists)
+          /sbin/route -n add -inet6 42::/16 -interface $INTERFACE 2>/dev/null || true
+        '';
         install-keys = pkgs.writeShellScript "install-keys" ''
           rm -rf /etc/tinc/${netname}/hosts.tmp
           mkdir -p /etc/tinc/${netname}/hosts.tmp
@@ -174,6 +163,10 @@ in
 
           rm -rf /etc/tinc/${netname}/hosts
           mv /etc/tinc/${netname}/hosts.tmp /etc/tinc/${netname}/hosts
+
+          # Install tinc-up script
+          cp ${tinc-up-script} /etc/tinc/${netname}/tinc-up
+          chmod 755 /etc/tinc/${netname}/tinc-up
         '';
       in
       {
