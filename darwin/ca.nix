@@ -67,16 +67,22 @@ in
           cat > "$TEMP_DIR/krebs-root-ca.crt" <<'EOF'
           ${cfg.rootCA}
           EOF
-          # Add to system keychain as trusted root
-          security add-trusted-cert -d -r trustRoot -k "/Library/Keychains/System.keychain" "$TEMP_DIR/krebs-root-ca.crt" || true
+          # Check if certificate is already in keychain
+          if ! security find-certificate -c "Krebs Root CA" /Library/Keychains/System.keychain >/dev/null 2>&1; then
+            echo "Adding Krebs Root CA to system keychain..."
+            security add-trusted-cert -d -r trustRoot -k "/Library/Keychains/System.keychain" "$TEMP_DIR/krebs-root-ca.crt" || true
+          fi
         ''}
 
         ${lib.optionalString cfg.trustIntermediate ''
           cat > "$TEMP_DIR/krebs-intermediate-ca.crt" <<'EOF'
           ${cfg.intermediateCA}
           EOF
-          # Add to system keychain
-          security add-trusted-cert -d -r trustAsRoot -k "/Library/Keychains/System.keychain" "$TEMP_DIR/krebs-intermediate-ca.crt" || true
+          # Check if certificate is already in keychain
+          if ! security find-certificate -c "Krebs Intermediate CA" /Library/Keychains/System.keychain >/dev/null 2>&1; then
+            echo "Adding Krebs Intermediate CA to system keychain..."
+            security add-trusted-cert -d -r trustAsRoot -k "/Library/Keychains/System.keychain" "$TEMP_DIR/krebs-intermediate-ca.crt" || true
+          fi
         ''}
 
         # Clean up temporary files
@@ -84,7 +90,6 @@ in
 
         # Configure Firefox to use system certificates
         # Must use sudo for system-wide preferences in /Library/Preferences
-        echo "Configuring Firefox enterprise policies..."
         sudo defaults write /Library/Preferences/org.mozilla.firefox EnterprisePoliciesEnabled -bool TRUE
         sudo defaults write /Library/Preferences/org.mozilla.firefox Certificates__ImportEnterpriseRoots -bool TRUE
       '';
