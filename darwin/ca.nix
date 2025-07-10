@@ -57,7 +57,7 @@ in
     # This approach is proven to work and survives Firefox updates
     (lib.mkIf (cfg.trustRoot || cfg.trustIntermediate) {
       # Add certificates to macOS system keychain and configure Firefox
-      system.activationScripts.firefoxCertPolicy.text = ''
+      system.activationScripts.postActivation.text = lib.mkAfter ''
         echo "Installing CA certificates..."
 
         # Write temporary certificate files
