@@ -65,7 +65,6 @@ in
 
     # Create tinc-up script to configure the interface
     environment.etc."tinc/${netname}/tinc-up" = {
-      mode = "0755";
       text = ''
         #!/bin/sh
         # Configure the interface
@@ -83,6 +82,14 @@ in
         /sbin/route -n add -inet6 42::/16 -interface $INTERFACE 2>/dev/null || true
       '';
     };
+
+    # Make tinc-up executable during activation
+    system.activationScripts.tinc-permissions.text = ''
+      # Make tinc-up executable
+      if [ -f /etc/tinc/${netname}/tinc-up ]; then
+        chmod 755 /etc/tinc/${netname}/tinc-up
+      fi
+    '';
 
     # Darwin-specific hosts file management with delimiters
     launchd.daemons."tinc.${netname}-hosts-update" =
