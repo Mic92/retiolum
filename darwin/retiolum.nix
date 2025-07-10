@@ -98,26 +98,32 @@ in
 
     # Darwin doesn't have systemd-networkd, so we need to configure the network interface differently
     # This will need to be done via launchd and ifconfig
-    launchd.daemons."tinc.${netname}-network" = {
-      command = toString (
-        pkgs.writeShellScript "tinc-network-setup" ''
-          # Wait for the tinc interface to come up
-          while ! ifconfig tinc.${netname} >/dev/null 2>&1; do
-            sleep 1
-          done
+    launchd.daemons."tinc.${netname}-network" = 
+      let
+        tincConf = config.services.tinc.networks.${netname};
+        # Get the Device from tinc configuration
+        interface = tincConf.settings.Device;
+      in
+      {
+        command = toString (
+          pkgs.writeShellScript "tinc-network-setup" ''
+            # Wait for the tinc interface to come up
+            while ! ifconfig ${interface} >/dev/null 2>&1; do
+              sleep 1
+            done
 
-          # Configure the interface
-          ${optionalString (cfg.ipv4 != null) ''
-            ifconfig tinc.${netname} inet ${cfg.ipv4} netmask 255.240.0.0
-          ''}
-          ${optionalString (cfg.ipv6 != null) ''
-            ifconfig tinc.${netname} inet6 ${cfg.ipv6} prefixlen 16
-          ''}
+            # Configure the interface
+            ${optionalString (cfg.ipv4 != null) ''
+              ifconfig ${interface} inet ${cfg.ipv4} netmask 255.240.0.0
+            ''}
+            ${optionalString (cfg.ipv6 != null) ''
+              ifconfig ${interface} inet6 ${cfg.ipv6} prefixlen 16
+            ''}
 
-          # Set MTU
-          ifconfig tinc.${netname} mtu 1377
-        ''
-      );
+            # Set MTU
+            ifconfig ${interface} mtu 1377
+          ''
+        );
 
       serviceConfig = {
         Label = "org.tinc-vpn.${netname}.network";
