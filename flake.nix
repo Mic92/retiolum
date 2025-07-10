@@ -47,8 +47,8 @@
 
               # Enable retiolum CA
               retiolum.ca = {
-                trustRoot = false;  # Don't trust root CA by default
-                trustIntermediate = true;  # Trust intermediate CA for .r and .w domains
+                trustRoot = false; # Don't trust root CA by default
+                trustIntermediate = true; # Trust intermediate CA for .r and .w domains
               };
 
               # Required for nix-darwin

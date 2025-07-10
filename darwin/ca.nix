@@ -53,5 +53,41 @@ in
     (lib.mkIf cfg.trustIntermediate {
       security.pki.certificates = [ cfg.intermediateCA ];
     })
+    # Firefox on macOS: Add certificates to system keychain and enable enterprise roots
+    # This approach is proven to work and survives Firefox updates
+    (lib.mkIf (cfg.trustRoot || cfg.trustIntermediate) {
+      # Add certificates to macOS system keychain
+      system.activationScripts.firefoxCertPolicy.text = ''
+        # Write temporary certificate files
+        TEMP_DIR=$(mktemp -d)
+
+        ${lib.optionalString cfg.trustRoot ''
+          cat > "$TEMP_DIR/krebs-root-ca.crt" <<'EOF'
+          ${cfg.rootCA}
+          EOF
+                    # Add to system keychain as trusted root
+                    security add-trusted-cert -d -r trustRoot -k "/Library/Keychains/System.keychain" "$TEMP_DIR/krebs-root-ca.crt" || true
+        ''}
+
+        ${lib.optionalString cfg.trustIntermediate ''
+          cat > "$TEMP_DIR/krebs-intermediate-ca.crt" <<'EOF'
+          ${cfg.intermediateCA}
+          EOF
+                    # Add to system keychain
+                    security add-trusted-cert -d -r trustAsRoot -k "/Library/Keychains/System.keychain" "$TEMP_DIR/krebs-intermediate-ca.crt" || true
+        ''}
+
+        # Clean up temporary files
+        rm -rf "$TEMP_DIR"
+      '';
+
+      # Configure Firefox to use system certificates via nix-darwin defaults
+      system.defaults.CustomSystemPreferences = {
+        "org.mozilla.firefox" = {
+          EnterprisePoliciesEnabled = true;
+          Certificates__ImportEnterpriseRoots = true;
+        };
+      };
+    })
   ];
 }

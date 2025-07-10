@@ -63,7 +63,6 @@ in
       '';
     };
 
-
     # Darwin-specific hosts file management with delimiters
     launchd.daemons."tinc.${netname}-hosts-update" =
       let
