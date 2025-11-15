@@ -14,6 +14,10 @@
 131.159.102.11 4.astrid.i
 2a09:80c0:102::11 astrid.i
 2a09:80c0:102::11 6.astrid.i
+131.159.102.1 bill.i
+131.159.102.1 4.bill.i
+2a09:80c0:102::1 bill.i
+2a09:80c0:102::1 6.bill.i
 131.159.38.25 blob64.i
 131.159.38.25 4.blob64.i
 2a09:80c0:38::25 blob64.i
@@ -38,6 +42,10 @@
 131.159.38.222 4.donna.i
 2a09:80c0:38::222 donna.i
 2a09:80c0:38::222 6.donna.i
+131.159.102.34 eliza.i
+131.159.102.34 4.eliza.i
+2a09:80c0:102::34 eliza.i
+2a09:80c0:102::34 6.eliza.i
 88.198.164.182 enklave.i
 88.198.164.182 4.enklave.i
 116.203.179.132 eva.i
@@ -74,10 +82,22 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 131.159.102.3 4.jackson.i
 2a09:80c0:102::3 jackson.i
 2a09:80c0:102::3 6.jackson.i
+131.159.102.32 jamie.i
+131.159.102.32 4.jamie.i
+2a09:80c0:102::32 jamie.i
+2a09:80c0:102::32 6.jamie.i
+131.159.38.93 joy.i
+131.159.38.93 4.joy.i
+2a09:80c0:38::93 joy.i
+2a09:80c0:38::93 6.joy.i
 178.254.30.202 latte.i
 178.254.30.202 4.latte.i
 2a00:6800:3:18c::2 latte.i
 2a00:6800:3:18c::2 6.latte.i
+131.159.102.33 martha.i
+131.159.102.33 4.martha.i
+2a09:80c0:102::33 martha.i
+2a09:80c0:102::33 6.martha.i
 131.159.102.10 mickey.i
 131.159.102.10 4.mickey.i
 2a09:80c0:102::10 mickey.i
@@ -120,6 +140,10 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 131.159.38.2 4.tegan.i
 2a09:80c0:38::2 tegan.i
 2a09:80c0:38::2 6.tegan.i
+131.159.38.185 vicki.i
+131.159.38.185 4.vicki.i
+2a09:80c0:38::185 vicki.i
+2a09:80c0:38::185 6.vicki.i
 131.159.102.25 vislor.i
 131.159.102.25 4.vislor.i
 2a09:80c0:102::25 vislor.i
@@ -178,6 +202,8 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 42:0:a46e:5af:632c:d2fe:a71d:cde0 6.au.r
 42:0:3c46:1452:ca55:fdaf:b12b:3027 bernie.r
 42:0:3c46:1452:ca55:fdaf:b12b:3027 6.bernie.r
+42:0:3c46:87ed:6232:1016:7553:939c bill.r
+42:0:3c46:87ed:6232:1016:7553:939c 6.bill.r
 42:0:3c46:7d21:79b1:b783:1bf0:b283 blob64.r
 42:0:3c46:7d21:79b1:b783:1bf0:b283 6.blob64.r
 10.243.0.77 blue.r
@@ -258,6 +284,8 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 42:0:3c46:96e2:72f4:be89:d6eb:ab14 6.doctor.r
 42:0:3c46:7f2f:ed62:c6fd:9f1b:9900 donna.r
 42:0:3c46:7f2f:ed62:c6fd:9f1b:9900 6.donna.r
+42:0:3c46:f789:833d:c869:548f:1c4c eliza.r
+42:0:3c46:f789:833d:c869:548f:1c4c 6.eliza.r
 10.243.27.30 enklave.r cgit.enklave.r
 10.243.27.30 4.enklave.r 4.cgit.enklave.r
 42:0:8809:2ef1:f4d5:6338:daa4:ba68 enklave.r cgit.enklave.r
@@ -364,10 +392,14 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 42:0:3c46:43ea:3161:1159:e7e6:ff78 6.jack.r
 42:0:3c46:d295:dc35:5ec7:5a2d:c4a1 jackson.r
 42:0:3c46:d295:dc35:5ec7:5a2d:c4a1 6.jackson.r
+42:0:3c46:1003:e7a4:477e:c945:697c jamie.r
+42:0:3c46:1003:e7a4:477e:c945:697c 6.jamie.r
 10.243.5.6 jongepad.r
 10.243.5.6 4.jongepad.r
 42:0:3c46:5a3b:2981:7f1f:a10a:2cae jongepad.r
 42:0:3c46:5a3b:2981:7f1f:a10a:2cae 6.jongepad.r
+42:0:3c46:abac:b113:405b:6f91:14b2 joy.r
+42:0:3c46:abac:b113:405b:6f91:14b2 6.joy.r
 10.243.183.231 justraute.r
 10.243.183.231 4.justraute.r
 42:0:3c46:e6cf:86ae:85a9:e13f:4cd justraute.r
@@ -416,6 +448,8 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 10.243.32.2 4.marohu.oxzi.r
 42:0:ac37:e5d5:7e26:bdee:77ea:b44f marohu.oxzi.r
 42:0:ac37:e5d5:7e26:bdee:77ea:b44f 6.marohu.oxzi.r
+42:0:3c46:5466:7dbe:f27a:673f:ea64 martha.r
+42:0:3c46:5466:7dbe:f27a:673f:ea64 6.martha.r
 10.243.0.113 massulus.r
 10.243.0.113 4.massulus.r
 42:0:ce16::113 massulus.r
@@ -668,6 +702,8 @@ fe80::9400:1ff:fe24:33f4 6.gum.i
 10.243.232.232 4.verex.r
 42:0:3c46:411b:8026:4850:820a:b689 verex.r
 42:0:3c46:411b:8026:4850:820a:b689 6.verex.r
+42:0:3c46:de75:9f66:46bd:8c32:3f20 vicki.r
+42:0:3c46:de75:9f66:46bd:8c32:3f20 6.vicki.r
 42:0:3c46:3a82:e9d3:d257:53bb:4ada vislor.r
 42:0:3c46:3a82:e9d3:d257:53bb:4ada 6.vislor.r
 10.243.214.15 wbob.r hydra.wbob.r log.wbob.r
