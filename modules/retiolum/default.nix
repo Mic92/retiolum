@@ -56,6 +56,10 @@ in
       extraConfig = ''
         Port = ${toString cfg.port}
         LocalDiscovery = yes
+        # Don't forward broadcast/multicast (SSDP, IGMP) into the mesh.
+        # MST broadcast loops during edge churn caused a packet storm
+        # (100% CPU on eva); stockholm sets the same since 2d2ab95f0.
+        Broadcast = no
 
         ConnectTo = eva
         ConnectTo = eve
